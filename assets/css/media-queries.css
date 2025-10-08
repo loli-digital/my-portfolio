@@ -1,0 +1,309 @@
+@media (prefers-reduced-motion: reduce) {
+
+  /* Estilos para usuario/as que prefieren reducir el movimiento */
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*Tablet styles*/
+@media (481px <=width <=768px) {
+  .layout {
+    width: 90%;
+  }
+
+  .header__text h1 {
+    font-size: 8rem;
+    text-shadow:
+      /*Para crear el borde*/
+      4px 0 0 var(--color-1),
+      -4px 0 0 var(--color-1),
+      0 4px 0 var(--color-1),
+      0 -4px 0 var(--color-1),
+      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px, var(--color-1) 11px 11px, var(--color-1) 12px 12px, var(--color-1) 13px 13px, var(--color-1) 14px 14px, var(--color-1) 15px 15px;
+  }
+
+  .header__text p:last-child {
+    margin-top: 4rem;
+  }
+
+  .img__project {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 2rem;
+    order: 1;
+  }
+
+  .project__link {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__title {
+    font-size: 4rem;
+    text-shadow:
+      /*Para crear el borde*/
+      2.5px 0 0 var(--color-1),
+      -2.5px 0 0 var(--color-1),
+      0 2.5px 0 var(--color-1),
+      0 -2.5px 0 var(--color-1),
+      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px;
+  }
+}
+
+/*Responsive menu and repeat styles*/
+@media screen and (max-width: 768px) {
+
+  .navbar {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-2);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
+    height: 35rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 3px solid var(--shadow-color);
+  }
+
+  .navbar__links {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .btn__responsive__menu,
+  .btn__close__responsive__menu {
+    display: block;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .button__themes {
+    display: none;
+  }
+
+  .header__text {
+    margin-top: 0;
+  }
+
+  .layout__links {
+    flex-direction: column;
+  }
+
+  .article__project {
+    width: 90%;
+    padding: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    flex-direction: column;
+  }
+
+  .article__habilities {
+    margin: 2rem 0;
+  }
+
+  .article__description {
+    order: 2;
+  }
+
+  .project__link {
+    margin-top: 2rem;
+  }
+
+  .main__layout,
+  .main__about {
+    gap: 5rem;
+  }
+
+  .main__about {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about__me,
+  .habilities,
+  .main__contact p {
+    width: 80%;
+  }
+
+  .main__projects .main__title {
+    margin: 4rem 0;
+  }
+}
+
+/*Laptop styles*/
+@media (769px <=width <=1024px) {
+  .layout {
+    width: 90%;
+  }
+
+  .button__themes {
+    width: 20%;
+  }
+
+  .navbar__empty,
+  .header__toggle {
+    width: 20%;
+  }
+
+  .article__project {
+    width: 90%;
+    padding: 4rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    flex-direction: column;
+  }
+
+  .img__project {
+    width: 100%;
+    height: 30rem;
+    order: 1;
+  }
+
+  .article__habilities {
+    margin: 3rem 0;
+  }
+
+  .article__description {
+    order: 2;
+  }
+
+  .project__link {
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__layout,
+  .main__about {
+    gap: 5rem;
+  }
+
+  .main__about {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about__me,
+  .habilities,
+  .main__contact p {
+    width: 80%;
+  }
+
+  .main__projects .main__title {
+    margin-top: 5rem;
+  }
+
+  .main__title {
+    font-size: 6rem;
+    text-shadow:
+      /*Para crear el borde*/
+      2.5px 0 0 var(--color-1),
+      -2.5px 0 0 var(--color-1),
+      0 2.5px 0 var(--color-1),
+      0 -2.5px 0 var(--color-1),
+      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .layout {
+    width: 80%;
+  }
+
+  .header__text {
+    margin-top: 7rem;
+  }
+
+  .header__text h1 {
+    font-size: 10rem;
+    text-shadow:
+    /*Para crear el borde*/
+      2px 2px 0 var(--color-1), 
+      2px -2px 0 var(--color-1), 
+      -2px 2px 0 var(--color-1), 
+      -2px -2px 0 var(--color-1), 
+      2px 0px 0 var(--color-1), 
+      0px 2px 0 var(--color-1), 
+      -2px 0px 0 var(--color-1), 
+      0px -2px 0 var(--color-1),
+      /*Para crear la sombra*/
+      1px 1px var(--color-1),
+      5px 4px var(--color-1),
+      5px 5px var(--color-1),
+      6px 6px var(--color-1),
+      7px 7px var(--color-1),
+      8px 8px var(--color-1),
+      9px 9px var(--color-1),
+      10px 10px var(--color-1);
+  }
+
+  .header__text p:last-child {
+    margin-top: 6rem;
+  }
+
+  .project__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .main__title {
+    font-size: 6rem;
+    text-shadow:
+      /*Para crear el borde*/
+      2.5px 0 0 var(--color-1),
+      -2.5px 0 0 var(--color-1),
+      0 2.5px 0 var(--color-1),
+      0 -2.5px 0 var(--color-1),
+      /*Para crear la sombra*/
+      1px 1px var(--color-1), 
+      2px 2px var(--color-1), 
+      3px 3px var(--color-1), 
+      4px 4px var(--color-1), 
+      5px 5px var(--color-1);
+  }
+}
+
+@media (1025px <=width <=1416px) {
+
+  .navbar__empty,
+  .button__themes {
+    width: 20%;
+  }
+
+  .main__projects {
+    max-width: 85%;
+  }
+
+  .article__project {
+    padding: 5rem;
+  }
+
+  .about__me,
+  .habilities {
+    flex-basis: 45%;
+  }
+}
