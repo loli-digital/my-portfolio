@@ -429,7 +429,7 @@ p {
 }
 
 .article__project:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0rem;
 }
 
 .article__description {
@@ -575,6 +575,10 @@ a.project__link:hover {
 .main__contact,
 .project__link {
     text-align: center;
+}
+
+.main__contact .main__title {
+    margin-top: -1rem;
 }
 
 .main__contact p {
