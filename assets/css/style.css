@@ -335,16 +335,14 @@ a.link__hover:hover {
 /*Logo*/
 .logo__svg {
     width: 4rem;
+    height: 4rem;
     filter: drop-shadow(3px 3px 1px var(--shadow-color));
     transition: all 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .logo__svg:hover {
     filter: drop-shadow(5px 5px 1px var(--shadow-color));
-}
-
-.article__habilities>.logo__svg__bootstrap {
-    width: 4rem;
 }
 
 .contact__logo>a>.logo__svg__linkedin {
@@ -352,8 +350,11 @@ a.link__hover:hover {
     border-radius: 5px;
 }
 
+.article__habilities>.logo__svg__bootstrap,
+.contact__logo>a>.logo__svg__linkedin,
 .contact__logo>a>.logo__svg__github {
     width: 4rem;
+    height: 4rem;
 }
 
 /*Accesibility links*/
@@ -565,10 +566,6 @@ a.project__link:hover {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-
-.habilities__logo .logo__svg {
-    cursor: pointer;
 }
 
 .main__title,
