@@ -251,7 +251,7 @@ body.no-transition {
 
 .navbar__empty,
 .button__themes {
-    width: 80%;
+    width: 75%;
 }
 
 .navbar__links {
@@ -387,7 +387,7 @@ p {
 }
 
 .main__title {
-    margin: 5rem 0;
+    margin: 3rem 0;
     font-family: var(--font-family-h2);
     font-size: 4rem;
     color: var(--title-color);
