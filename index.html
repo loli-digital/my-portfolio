@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potfolio | Loli G.F.</title>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="description" content="Personal front-end developer portfolio">
-    <meta name="author" content="Loli G.F.">
-    <meta name="copyright" content="Loli G.F.">
-    <meta property="og:type" content="https://loli-digital.pages.dev/">
-    <meta property="og:title" content="Portfolio de Loli G.F.">
-    <meta property="og:description" content="Personal front-end developer portfolio">
-    <meta property="og:image" content="enlace al archivo de la imagen">
-    <meta property="og:url" content="permalink">
+    <meta name="robots" content="index, follow">
 
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="canonical" href="https://loli-digital.pages.dev/" />
+
+    <link rel="icon" type="favicon" href="favicon.ico" />
+    <link rel="icon" type="image" href="favicon-16x16.png" />
+    <link rel="icon" type="image" href="favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <title>Loli G.F. || Portfolio</title>
+
+    <meta property="og:title" content="Loli Guerrero || Portfolio" />
+    <meta property="og:description" content="Portfolio personal donde muestro mis mejores proyectos de programación" />
+    <meta property="og:image" content="og-imagen.jpg" />
+    <meta property="og:url" content="https://loli-digital.pages.dev/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Loli Guerrero || Portfolio" />
+    <meta name="twitter:description" content="Portfolio personal donde muestro mis mejores proyectos de programación" />
+    <meta name="twitter:image" content="og-image.jpg" />
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -30,14 +39,14 @@
             <div class="header__nav">
                 <div class="navbar__empty">
                     <button class="btn__responsive__menu" aria-label="Abrir menú">
-                        <img src="assets/img/bars-solid-full.svg"
-                            alt="Abrir menú desplegable" title="Abrir menú desplegable para móvil" class="menu-mobile">
+                        <img src="assets/img/bars-solid-full.svg" alt="Abrir menú desplegable"
+                            title="Abrir menú desplegable para móvil" class="menu-mobile">
                     </button>
                 </div>
                 <nav class="navbar">
                     <button class="btn__close__responsive__menu" aria-label="Cerrar menú">
-                        <img src="assets/img/xmark-solid-full.svg"
-                            alt="Quitar menú desplegable" title="Quitar menú desplegable para móvil" class="menu-mobile-cancelar">
+                        <img src="assets/img/xmark-solid-full.svg" alt="Quitar menú desplegable"
+                            title="Quitar menú desplegable para móvil" class="menu-mobile-cancelar">
                     </button>
                     <ul class="navbar__links">
                         <li><a href="#" class="link__hover">Inicio</a></li>
@@ -49,13 +58,11 @@
 
                 <button id="theme-toggle" class="button__themes">
                     <span class="icon__theme">
-                        <img src="assets/img/moon.png"
-                            alt="Luna - Made by Charlie Clark from Liinks.co">
-                        </span>
+                        <img src="assets/img/moon.png" alt="Luna - Made by Charlie Clark from Liinks.co">
+                    </span>
                     <span class="icon__theme">
-                        <img src="assets/img/sun.png"
-                            alt="Sol - Made by Charlie Clark from Liinks.co">
-                        </span>
+                        <img src="assets/img/sun.png" alt="Sol - Made by Charlie Clark from Liinks.co">
+                    </span>
                 </button>
             </div>
 
@@ -78,15 +85,16 @@
                     <div class="article__description">
                         <h3 class="project__title">Clínica dental Navarro</h3>
                         <p>Clínica dental ficticia realizada en <strong>React</strong> y <strong>Tailwind</strong>.</p>
-                        <p>Este proyecto tiene la funcionalidad de pedir cita y elegir: servicio, profesional, fecha y hora.</p>
+                        <p>Este proyecto tiene la funcionalidad de pedir cita y elegir: servicio, profesional, fecha y
+                            hora.</p>
                         <p>Uso de Swiper para las reseñas y React DatePicker para el calendario del formulario.</p>
                         <div class="layout__links">
-                            <a href="https://calendario-dentista-react.pages.dev/" target="_blank" rel="noopener noreferrer"
-                                class="project__link">Enlace al proyecto
+                            <a href="https://calendario-dentista-react.pages.dev/" target="_blank"
+                                rel="noopener noreferrer" class="project__link">Enlace al proyecto
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
-                            <a href="https://github.com/loli-digital/calendario-dentista-react" target="_blank" rel="noopener noreferrer"
-                                class="project__link">Enlace al código
+                            <a href="https://github.com/loli-digital/calendario-dentista-react" target="_blank"
+                                rel="noopener noreferrer" class="project__link">Enlace al código
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
                         </div>
@@ -97,7 +105,8 @@
                             <picture>
                                 <source srcset="assets/img/clinica-dental-react.avif">
                                 <source srcset="assets/img/clinica-dental-react.webp">
-                                <img src="assets/img/clinica-dental-react.png" alt="Página web ficticia de una clínica dental" fetchpriority="high">
+                                <img src="assets/img/clinica-dental-react.png"
+                                    alt="Página web ficticia de una clínica dental" fetchpriority="high">
                             </picture>
                         </div>
 
@@ -116,16 +125,19 @@
                 <article class="article__project">
                     <div class="article__description">
                         <h3 class="project__title">Assassin's Creed Project</h3>
-                        <p>Página web realizada en Tailwind sobre cuatro de los juegos que más me gustan de la saga Assassin's Creed.</p>
-                        <p>En la página de inicio hay información sobre Assassin's Creed, personajes más icónicos y la justificación del proyecto.</p>
-                        <p>Las demás páginas contienen: resumen, tráiler, galería, contenido recomendado y características.</p>
+                        <p>Página web realizada en Tailwind sobre cuatro de los juegos que más me gustan de la saga
+                            Assassin's Creed.</p>
+                        <p>En la página de inicio hay información sobre Assassin's Creed, personajes más icónicos y la
+                            justificación del proyecto.</p>
+                        <p>Las demás páginas contienen: resumen, tráiler, galería, contenido recomendado y
+                            características.</p>
                         <div class="layout__links">
-                            <a href="https://loli-digital.github.io/assassins-creed-project/" target="_blank" rel="noopener noreferrer"
-                                class="project__link">Enlace al proyecto
+                            <a href="https://loli-digital.github.io/assassins-creed-project/" target="_blank"
+                                rel="noopener noreferrer" class="project__link">Enlace al proyecto
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
-                            <a href="https://github.com/loli-digital/assassins-creed-project" target="_blank" rel="noopener noreferrer"
-                                class="project__link">Enlace al código
+                            <a href="https://github.com/loli-digital/assassins-creed-project" target="_blank"
+                                rel="noopener noreferrer" class="project__link">Enlace al código
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
                         </div>
@@ -136,7 +148,8 @@
                             <picture>
                                 <source srcset="assets/img/assassins-creed-project.avif">
                                 <source srcset="assets/img/assassins-creed-project.webp">
-                                <img src="assets/img/assassins-creed-project.png" alt="Página web de la saga de videojuegos Assassin's Creed" fetchpriority="high">
+                                <img src="assets/img/assassins-creed-project.png"
+                                    alt="Página web de la saga de videojuegos Assassin's Creed" fetchpriority="high">
                             </picture>
                         </div>
 
@@ -155,7 +168,8 @@
                 <article class="article__project">
                     <div class="article__description">
                         <h3 class="project__title">Mini proyectos</h3>
-                        <p>Web creada para englobar los mejores mini proyectos que he realizado de roadmap.sh y otras ideas, usando las tecnologías básicas y frameworks.</p>
+                        <p>Web creada para englobar los mejores mini proyectos que he realizado de roadmap.sh y otras
+                            ideas, usando las tecnologías básicas y frameworks.</p>
                         <p>En cada proyecto puedes ver la demo y el código.</p>
                         <div class="layout__links">
                             <a href="https://mini-proyectos.pages.dev/" target="_blank" rel="noopener noreferrer"
@@ -163,8 +177,8 @@
                                 Enlace a la web
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
-                            <a href="https://github.com/loli-digital/roadmap.sh-projects" target="_blank" rel="noopener noreferrer"
-                                class="project__link">
+                            <a href="https://github.com/loli-digital/roadmap.sh-projects" target="_blank"
+                                rel="noopener noreferrer" class="project__link">
                                 Enlace al código
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
@@ -176,7 +190,8 @@
                             <picture>
                                 <source srcset="assets/img/mini-proyectos.avif">
                                 <source srcset="assets/img/mini-proyectos.webp">
-                                <img src="assets/img/mini-proyectos.png" alt="Página web que engloba mini proyectos" loading="lazy">
+                                <img src="assets/img/mini-proyectos.png" alt="Página web que engloba mini proyectos"
+                                    loading="lazy">
                             </picture>
                         </div>
 
@@ -185,9 +200,6 @@
                             <img src="assets/img/css.svg" alt="Logo CSS3" title="CSS3" class="logo__svg">
                             <img src="assets/img/javascript.svg" alt="Logo JavaScript" title="JavaScript"
                                 class="logo__svg">
-                            <img src="assets/img/react.svg" alt="Logo React" title="React" class="logo__svg logo__without__shadow">
-                            <img src="assets/img/tailwindcss.svg" alt="Logo Tailwind" title="Tailwind"
-                            class="logo__svg logo__without__shadow">
                         </div>
                     </div>
                 </article>
@@ -217,7 +229,8 @@
                             <picture>
                                 <source srcset="assets/img/LexiGo-bootstrap.avif">
                                 <source srcset="assets/img/LexiGo-bootstrap.webp">
-                                <img src="assets/img/LexiGo-bootstrap.png" alt="Página web de una academia de inglés" loading="lazy">
+                                <img src="assets/img/LexiGo-bootstrap.png" alt="Página web de una academia de inglés"
+                                    loading="lazy">
                             </picture>
                         </div>
 
@@ -254,7 +267,8 @@
                             <picture>
                                 <source srcset="assets/img/Vetalia-wordpress.avif">
                                 <source srcset="assets/img/Vetalia-wordpress.webp">
-                                <img src="assets/img/Vetalia-wordpress.png" alt="Página web de una clínica veterinaria" loading="lazy">
+                                <img src="assets/img/Vetalia-wordpress.png" alt="Página web de una clínica veterinaria"
+                                    loading="lazy">
                             </picture>
                         </div>
                         <div class="article__habilities">
@@ -296,7 +310,8 @@
                         <img src="assets/img/html.svg" alt="Logo HTML5" title="HTML5" class="logo__svg">
                         <img src="assets/img/css.svg" alt="Logo CSS3" title="CSS3" class="logo__svg">
                         <img src="assets/img/javascript.svg" alt="Logo JavaScript" title="JavaScript" class="logo__svg">
-                        <img src="assets/img/react.svg" alt="Logo React" title="React" class="logo__svg logo__without__shadow">
+                        <img src="assets/img/react.svg" alt="Logo React" title="React"
+                            class="logo__svg logo__without__shadow">
                         <img src="assets/img/tailwindcss.svg" alt="Logo Tailwind" title="Tailwind"
                             class="logo__svg logo__without__shadow">
                         <img src="assets/img/bootstrap.svg" alt="Logo Bootstrap" title="Bootstrap"
@@ -332,12 +347,14 @@
         <!--Footer-->
         <footer class="footer__layout">
             <p>&copy;<span class="current__year"></span> Todos los derechos reservados</p>
-            <p>Hecho con 
+            <p>Hecho con
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" class="heart-footer">
                     <!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path fill="currentColor" d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/>
+                    <path fill="currentColor"
+                        d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
                 </svg>
-                 por <span class="text__font-family">Loli G.F.</span></p>
+                por <span class="text__font-family">Loli G.F.</span>
+            </p>
         </footer>
     </div>
 
