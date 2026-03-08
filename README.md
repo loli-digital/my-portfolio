@@ -4,9 +4,9 @@ Este repositorio contiene el código fuente para mi portfolio personal, diseñad
 
 ## Despliegue y Enlace
 
-El proyecto está desplegado continuamente a través de Cloudflare Pages.
+El proyecto está desplegado a través de GitHub Pages.
 
-[https://loli-digital.pages.dev/](https://loli-digital.pages.dev/)
+[Ver portfolio](https://loli-digital.github.io/my-portfolio/)
 
 ##  Tecnologías Utilizadas
 
