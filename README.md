@@ -6,7 +6,6 @@ Este repositorio contiene mi portfolio personal como **Frontend Developer**, don
 
 El objetivo del portfolio es presentar mis habilidades en desarrollo frontend, diseño responsive y construcción de interfaces interactivas.
 
-**Demo del portfolio**
 [Demo del portfolio](https://loli-digital.github.io/my-portfolio/)
 
 ## Vista previa
@@ -70,11 +69,7 @@ Proyecto desarrollado como aplicación SPA utilizando React y React Router, con 
 
 React · React Router · React DatePicker · date-fns · Swiper · Tailwind CSS
 
-Demo:
-[Ver demo](https://calendario-dentista-react.pages.dev/)
-
-Repositorio:
-[Ver repositorio](https://github.com/loli-digital/calendario-dentista-react)
+[Ver demo](https://calendario-dentista-react.pages.dev/) || [Ver repositorio](https://github.com/loli-digital/calendario-dentista-react)
 
 ## Otros proyectos
 
@@ -102,17 +97,14 @@ En este portfolio demuestro mis habilidades en:
 
 ## Instalación y ejecución
 
+El proyecto es una web estática desarrollada con **HTML, CSS y JavaScript**, por lo que no requiere instalación de dependencias.
+
 Clonar el repositorio:
 
 `git clone https://github.com/loli-digital/my-portfolio.git`
 
-El proyecto es una web estática desarrollada con **HTML, CSS y JavaScript**, por lo que no requiere instalación de dependencias.
 ---
 
 ## Contacto
 
-LinkedIn
-[LinkedIn](https://www.linkedin.com/in/loli-guerrero/)
-
-GitHub
-[GitHub](https://github.com/loli-digital)
+[LinkedIn](https://www.linkedin.com/in/loli-guerrero/) || [GitHub](https://github.com/loli-digital)
