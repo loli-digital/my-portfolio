@@ -123,30 +123,20 @@ body.dark__theme {
     color: var(--title-color);
 }
 
-.dark__theme .article__habilities .logo__svg,
-.dark__theme .habilities__logo .logo__svg,
-.dark__theme .contact__logo .logo__svg {
+.dark__theme .logo__svg {
     filter: drop-shadow(3px 3px 1px var(--link-color));
     cursor: pointer;
 }
 
-.dark__theme .article__habilities .logo__svg:hover,
-.dark__theme .habilities__logo .logo__svg:hover,
-.dark__theme .contact__logo .logo__svg:hover {
+.dark__theme .logo__svg:hover {
     filter: drop-shadow(5px 5px 1px var(--link-color));
 }
 
-.dark__theme .article__habilities .logo__without__shadow,
-.article__habilities .logo__without__shadow,
-.dark__theme .habilities__logo .logo__without__shadow,
-.habilities__logo .logo__without__shadow {
+.dark__theme .logo__without__shadow {
     filter: drop-shadow(0 0 0 transparent);
 }
 
-.dark__theme .article__habilities .logo__without__shadow:hover,
-.article__habilities .logo__without__shadow:hover,
-.dark__theme .habilities__logo .logo__without__shadow:hover,
-.habilities__logo .logo__without__shadow:hover {
+.dark__theme .logo__without__shadow:hover {
     filter: drop-shadow(0 0 0 transparent);
 }
 
@@ -165,8 +155,9 @@ body {
     font-size: 1.6rem;
     font-optical-sizing: auto;
     background-color: var(--color-2);
-    --theme-transition: background-color 0.3s ease, color 0.3s ease;
+    --theme-transition: background-color 0.3s ease, color 0.3s ease, background-image 0.3s ease;
     transition: var(--theme-transition);
+    line-height: 1.5;
 }
 
 body.no-transition {
@@ -221,7 +212,16 @@ body.no-transition {
         -2px 0 0 var(--color-1),
         0 2px 0 var(--color-1),
         0 -2px 0 var(--color-1),
-        var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px;
+        var(--color-1) 1px 1px, 
+        var(--color-1) 0px 0px, 
+        var(--color-1) 1px 1px, 
+        var(--color-1) 2px 2px, 
+        var(--color-1) 3px 3px, 
+        var(--color-1) 4px 4px, 
+        var(--color-1) 5px 5px, 
+        var(--color-1) 6px 6px, 
+        var(--color-1) 7px 7px, 
+        var(--color-1) 8px 8px;
 }
 
 .header__text p:last-child {
@@ -302,7 +302,6 @@ a.link__hover:hover {
 
 .button__themes {
     border: none;
-    outline: none;
     background-color: transparent;
 }
 
@@ -357,7 +356,28 @@ a.link__hover:hover {
     height: 4rem;
 }
 
-/*Accesibility links*/
+/*Accesibility styles*/
+
+a.link__hover:focus-visible,
+.button__themes:focus-visible,
+.text__font-family:focus-visible,
+.contact__logo a:focus-visible,
+.btn__responsive__menu:focus-visible,
+.btn__close__responsive__menu:focus-visible {
+    outline: 3px solid var(--shadow-color);
+    outline-offset: 4px;
+}
+
+a.project__link:focus-visible {
+    outline: 3px solid var(--title-color);
+    outline-offset: 4px;
+}
+
+.icon__theme:focus-visible {
+    transform: scale(1.2);
+    outline: 2px solid var(--color-1);
+    outline-offset: 4px;
+}
 
 .sr-only {
     position: absolute;
@@ -366,9 +386,21 @@ a.link__hover:hover {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    clip-path: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+    background-color: transparent;
+    color: transparent;
+}
+
+.sr-only:focus, .sr-only:active { 
+    position: static; 
+    width: auto; 
+    height: auto; 
+    margin: 0; 
+    overflow: visible; 
+    clip-path: auto; 
+    white-space: normal; 
 }
 
 /*Main*/
@@ -396,7 +428,13 @@ p {
       -2.5px 0 0 var(--color-1),
       0 2.5px 0 var(--color-1),
       0 -2.5px 0 var(--color-1),
-      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px;
+      var(--color-1) 1px 1px, 
+      var(--color-1) 0px 0px, 
+      var(--color-1) 1px 1px, 
+      var(--color-1) 2px 2px, 
+      var(--color-1) 3px 3px, 
+      var(--color-1) 4px 4px, 
+      var(--color-1) 5px 5px;
 }
 
 .main__projects {
@@ -495,6 +533,7 @@ p {
 }
 
 a.project__link {
+    width: 17rem;
     margin-top: 2rem;
     padding: 1.5rem;
     display: inline-block;
@@ -516,6 +555,14 @@ a.project__link {
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
 }
+
+.article__project:last-child a.project__link {
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
 
 a.project__link:hover {
     border-color: var(--color-1);

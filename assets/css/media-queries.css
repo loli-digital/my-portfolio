@@ -4,9 +4,8 @@
   *,
   ::before,
   ::after {
-    animation-duration: 0.001s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001s !important;
+    animation: none !important; 
+    transition: none !important;
     scroll-behavior: auto !important;
   }
 }
@@ -25,7 +24,23 @@
       -4px 0 0 var(--color-1),
       0 4px 0 var(--color-1),
       0 -4px 0 var(--color-1),
-      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px, var(--color-1) 11px 11px, var(--color-1) 12px 12px, var(--color-1) 13px 13px, var(--color-1) 14px 14px, var(--color-1) 15px 15px;
+      var(--color-1) 1px 1px, 
+      var(--color-1) 0px 0px, 
+      var(--color-1) 1px 1px, 
+      var(--color-1) 2px 2px, 
+      var(--color-1) 3px 3px, 
+      var(--color-1) 4px 4px, 
+      var(--color-1) 5px 5px, 
+      var(--color-1) 6px 6px, 
+      var(--color-1) 7px 7px, 
+      var(--color-1) 8px 8px, 
+      var(--color-1) 9px 9px, 
+      var(--color-1) 10px 10px, 
+      var(--color-1) 11px 11px, 
+      var(--color-1) 12px 12px, 
+      var(--color-1) 13px 13px, 
+      var(--color-1) 14px 14px, 
+      var(--color-1) 15px 15px;
   }
 
   .header__text p:last-child {
@@ -40,8 +55,7 @@
   }
 
   .project__link {
-    width: 70%;
-    margin: 0 auto;
+    width: 50%;
     display: flex;
     justify-content: center;
   }
@@ -54,11 +68,22 @@
       -2.5px 0 0 var(--color-1),
       0 2.5px 0 var(--color-1),
       0 -2.5px 0 var(--color-1),
-      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px;
+      var(--color-1) 1px 1px, 
+      var(--color-1) 0px 0px, 
+      var(--color-1) 1px 1px, 
+      var(--color-1) 2px 2px, 
+      var(--color-1) 3px 3px, 
+      var(--color-1) 4px 4px, 
+      var(--color-1) 5px 5px, 
+      var(--color-1) 6px 6px, 
+      var(--color-1) 7px 7px, 
+      var(--color-1) 8px 8px, 
+      var(--color-1) 9px 9px, 
+      var(--color-1) 10px 10px;
   }
 }
 
-/*Responsive menu and repeat styles*/
+/*Responsive menu*/
 @media screen and (max-width: 768px) {
 
   .navbar {
@@ -93,11 +118,11 @@
 
   .btn__responsive__menu,
   .btn__close__responsive__menu {
-    display: block;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
     border: none;
-    outline: none;
     background-color: transparent;
-    cursor: pointer;
   }
 
   .button__themes {
@@ -226,7 +251,18 @@
       -2.5px 0 0 var(--color-1),
       0 2.5px 0 var(--color-1),
       0 -2.5px 0 var(--color-1),
-      var(--color-1) 1px 1px, var(--color-1) 0px 0px, var(--color-1) 1px 1px, var(--color-1) 2px 2px, var(--color-1) 3px 3px, var(--color-1) 4px 4px, var(--color-1) 5px 5px, var(--color-1) 6px 6px, var(--color-1) 7px 7px, var(--color-1) 8px 8px, var(--color-1) 9px 9px, var(--color-1) 10px 10px;
+      var(--color-1) 1px 1px, 
+      var(--color-1) 0px 0px, 
+      var(--color-1) 1px 1px, 
+      var(--color-1) 2px 2px, 
+      var(--color-1) 3px 3px, 
+      var(--color-1) 4px 4px, 
+      var(--color-1) 5px 5px, 
+      var(--color-1) 6px 6px, 
+      var(--color-1) 7px 7px, 
+      var(--color-1) 8px 8px, 
+      var(--color-1) 9px 9px, 
+      var(--color-1) 10px 10px;
   }
 }
 
