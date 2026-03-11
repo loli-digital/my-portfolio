@@ -125,7 +125,6 @@ body.dark__theme {
 
 .dark__theme .logo__svg {
     filter: drop-shadow(3px 3px 1px var(--link-color));
-    cursor: pointer;
 }
 
 .dark__theme .logo__svg:hover {
@@ -337,7 +336,6 @@ a.link__hover:hover {
     height: 4rem;
     filter: drop-shadow(3px 3px 1px var(--shadow-color));
     transition: all 200ms ease-in-out;
-    cursor: pointer;
 }
 
 .logo__svg:hover {
