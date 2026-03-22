@@ -131,11 +131,10 @@ body.dark__theme {
     filter: drop-shadow(5px 5px 1px var(--link-color));
 }
 
-.dark__theme .logo__without__shadow {
-    filter: drop-shadow(0 0 0 transparent);
-}
-
-.dark__theme .logo__without__shadow:hover {
+.dark__theme .article__habilities>.logo__svg.logo__without__shadow,
+.dark__theme .habilities>.habilities__logo>.logo__svg.logo__without__shadow,
+.dark__theme .article__habilities>.logo__svg.logo__without__shadow:hover,
+.dark__theme .habilities>.habilities__logo>.logo__svg.logo__without__shadow:hover {
     filter: drop-shadow(0 0 0 transparent);
 }
 
@@ -352,6 +351,16 @@ a.link__hover:hover {
 .contact__logo>a>.logo__svg__github {
     width: 4rem;
     height: 4rem;
+}
+
+.article__habilities>.logo__svg.logo__without__shadow,
+.habilities__logo>.logo__without__shadow {
+    filter: drop-shadow(2px 2px 1px var(--color-border-layout));
+}
+
+.article__habilities>.logo__svg.logo__without__shadow:hover,
+.habilities__logo>.logo__without__shadow:hover {
+    filter: drop-shadow(3px 3px 1px var(--color-border-layout));
 }
 
 /*Accesibility styles*/
@@ -634,7 +643,7 @@ a.project__link:hover {
     margin-top: 4rem;
     padding: 2rem;
     position: relative;
-    
+
     text-align: center;
 }
 
