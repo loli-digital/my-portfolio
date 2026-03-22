@@ -633,7 +633,28 @@ a.project__link:hover {
     width: 100%;
     margin-top: 4rem;
     padding: 2rem;
+    position: relative;
+    
     text-align: center;
+}
+
+.footer__link {
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 2rem;
+
+    border-radius: 5px;
+    border: 2px solid var(--shadow-color);
+    background-color: var(--color-1);
+    color: var(--title-color);
+    transition: all .3s ease-in-out;
+}
+
+.footer__link:hover {
+    background-color: var(--color-2);
 }
 
 .heart-footer {
