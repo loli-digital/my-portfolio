@@ -72,6 +72,12 @@ body.dark__theme {
     background-image: linear-gradient(var(--color-2), var(--color-3));
 }
 
+.dark__theme .link__hover,
+.dark__theme  .project__title,
+.dark__theme  .text__font-family {
+    color: var(--text-color);
+}
+
 .dark__theme .article__project {
     background-color: var(--article-project-bg);
     border-radius: 8px;
@@ -138,6 +144,23 @@ body.dark__theme {
     filter: drop-shadow(0 0 0 transparent);
 }
 
+.dark__theme .about__me a.text__font-family{
+    color: var(--shadow-color);
+}
+
+.dark__theme .about__me a.text__font-family:hover {
+    color: var(--color-1);
+}
+
+.dark__theme .footer__link {
+    background-color: var(--color-2);
+    color: var(--title-color);
+}
+
+.dark__theme .footer__link:hover {
+    background-color: var(--color-1);
+}
+
 /*General styles*/
 html {
     margin: 0;
@@ -171,6 +194,12 @@ body.no-transition {
     box-shadow:
         -2px 0 20px var(--color-border-layout),
         2px 0 20px var(--color-border-layout);
+}
+
+a.link__hover,
+.project__title,
+.text__font-family {
+    color: var(--shadow-color);
 }
 
 /*Header*/
@@ -267,11 +296,10 @@ a.link__hover {
     padding: 1rem;
     display: inline-block;
     position: relative;
-    color: var(--link-color);
     text-decoration: none;
     border-radius: 5px;
     border: 3px solid transparent;
-    transition: all 0.5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 a.link__hover:hover {
@@ -657,13 +685,14 @@ a.project__link:hover {
 
     border-radius: 5px;
     border: 2px solid var(--shadow-color);
-    background-color: var(--color-1);
-    color: var(--title-color);
+    background-color: var(--color-2);
+    color: var(--shadow-color);
     transition: all .3s ease-in-out;
 }
 
 .footer__link:hover {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
+    color: var(--title-color);
 }
 
 .heart-footer {
