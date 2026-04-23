@@ -158,17 +158,16 @@
   }
 
   .main__layout,
-  .main__about {
+  .main__about__me {
     gap: 5rem;
   }
 
-  .main__about {
+  .main__about__me {
     align-items: center;
     flex-direction: column;
   }
 
-  .about__me,
-  .habilities,
+  .main__habilities p,
   .main__contact p {
     width: 80%;
   }
@@ -195,7 +194,7 @@
 
   .hero__section h2,
   .hero__section .text__p {
-    padding: 0 5rem;
+    width: 80%;
   }
 
   .article__project {
@@ -229,16 +228,16 @@
   }
 
   .main__layout,
-  .main__about {
+  .main__about__me {
     gap: 5rem;
   }
 
-  .main__about {
+  .main__about__me {
     align-items: center;
     flex-direction: column;
   }
 
-  .about__me,
+  .main__about__me p,
   .habilities,
   .main__contact p {
     width: 80%;
@@ -302,10 +301,9 @@
       9px 9px var(--color-1),
       10px 10px var(--color-1);
   }
-  
-  .hero__section h2,
+
   .hero__section .text__p {
-    padding: 0 20rem;
+    width: 60%;
   }
 
   .hero__section p:last-child {
@@ -331,6 +329,26 @@
       4px 4px var(--color-1),
       5px 5px var(--color-1);
   }
+
+  .main__about__me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about__me__layout {
+    padding: 0 15rem;
+    flex-flow: row nowrap;
+  }
+
+  .about__me__text {
+    flex-basis: 70%;
+  }
+
+  .about__me__foto {
+    width: 30rem;
+  }
 }
 
 @media (1025px <=width <=1416px) {
@@ -346,10 +364,5 @@
 
   .article__project {
     padding: 5rem;
-  }
-
-  .about__me,
-  .habilities {
-    flex-basis: 45%;
   }
 }
