@@ -238,7 +238,6 @@
   }
 
   .main__about__me p,
-  .habilities,
   .main__contact p {
     width: 80%;
   }
@@ -348,6 +347,10 @@
 
   .about__me__foto {
     width: 30rem;
+  }
+
+  .skills__section {
+    max-width: 100%;
   }
 }
 

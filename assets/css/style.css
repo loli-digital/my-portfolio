@@ -490,7 +490,7 @@ p {
 }
 
 .main__title {
-    margin: 5rem 0;
+    margin: 4rem 0;
     font-family: var(--font-family-h2);
     font-size: 4rem;
     color: var(--title-color);
@@ -679,14 +679,83 @@ a.project__link:hover {
     line-height: 1.6;
 }
 
-/*Habilities*/
+/*Skills*/
 
-.habilities__logo {
-    max-width: 35rem;
+.skills__section {
+    max-width: 80%;
     margin: 0 auto;
+    padding: 4rem 2rem;
 }
 
-.habilities__logo,
+.skills__section .main__title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skills__layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.skills__block {
+    background: var(--color-2);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.skills__block:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.skills__block h3 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 3.5rem;
+    font-family: var(--font-family-h2);
+    text-shadow:
+        var(--color-1) 1px 1px,
+        var(--color-1) 0px 0px,
+        var(--color-1) 1px 1px,
+        var(--color-1) 2px 2px;
+}
+
+.skills__block ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.skills__block li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: 1.5rem;
+    font-family: var(--font-family-text);
+    color: var(--text-color);
+}
+
+.skills__block li img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+/*Contacto*/
+
+.main__title,
+.main__contact,
+.main__about__me,
+.project__link,
+.download__cv {
+    text-align: center;
+}
+
 .contact__logo {
     padding: 2rem;
     display: flex;
@@ -694,19 +763,6 @@ a.project__link:hover {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-}
-
-.main__title,
-.main__contact,
-.main__about__me,
-.main__habilities,
-.project__link,
-.download__cv {
-    text-align: center;
-}
-
-.main__contact .main__title {
-    margin-top: -1rem;
 }
 
 .main__contact p {
