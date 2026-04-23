@@ -65,11 +65,22 @@
     --shadow-color: #D9326B;
     --link-color: #fff;
     --link-bg-color: #fff;
-    /*--bg-responsive-menu: hsla(300, 54%, 22%, 0.792);*/
 }
 
 body.dark__theme {
     background-image: linear-gradient(var(--color-2), var(--color-3));
+}
+
+.dark__theme .navbar__links>li>a.download__cv--navbar {
+    background-color: var(--color-2);
+    border: 3px solid var(--color-1);
+    color: var(--text-color);
+}
+
+.dark__theme .navbar__links>li>a.download__cv--navbar:hover {
+    border: 3px solid var(--color-border);
+    background-color: var(--color-1);
+    color: var(--link-bg-color);
 }
 
 .dark__theme .link__hover,
@@ -122,6 +133,17 @@ body.dark__theme {
         3px 3px 0px var(--color-3),
         4px 4px 0px var(--color-3),
         5px 5px 0px var(--color-3),
+        6px 6px 0px var(--color-1),
+        7px 7px 0px var(--color-1);
+}
+
+.dark__theme .download__cv {
+    background-color: var(--color-2);
+    box-shadow: 1px 1px 0px var(--color-2),
+        2px 2px 0px var(--color-2),
+        3px 3px 0px var(--color-2),
+        4px 4px 0px var(--color-2),
+        5px 5px 0px var(--color-2),
         6px 6px 0px var(--color-1),
         7px 7px 0px var(--color-1);
 }
@@ -222,29 +244,76 @@ a.link__hover,
 .navbar,
 .navbar__links,
 .button__themes {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .navbar {
     width: 100%;
+    justify-content: center;
+}
+
+.navbar__empty {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .navbar__empty,
 .button__themes {
-    width: 75%;
+    width: auto;
 }
 
 .navbar__links {
-    width: 100%;
+    display: flex;
+    align-items: center;
     gap: 2rem;
+    justify-content: flex-start;
+    width: auto;
 }
 
 nav ul li a {
     font-family: var(--font-family-link);
     font-size: 2rem;
+}
+
+.navbar__links>li>a.download__cv--navbar {
+    margin-top: 0;
+    padding: 1rem;
+    display: inline-block;
+    position: relative;
+    background-color: var(--color-1);
+    border-radius: 5px;
+    border: 3px solid var(--shadow-color);
+    color: var(--link-bg-color);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar__links>li>a.download__cv--navbar:hover {
+    border: 3px solid var(--color-1);
+    background-color: var(--title-color);
+    color: var(--shadow-color);
+}
+
+.logo__navbar {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo__navbar:hover {
+    transform: scale(1.2);
+}
+
+.logo__navbar--email {
+    filter: drop-shadow(0px 0px 2px var(--shadow-color));
 }
 
 /*Link hover*/
@@ -269,6 +338,16 @@ a.link__hover:hover {
 }
 
 /*Responsive menu*/
+.btn__close__responsive__menu {
+    display: block;
+    margin-left: 1rem;
+}
+
+.btn__responsive__menu {
+    display: block;
+    margin-left: 1rem;
+}
+
 .btn__responsive__menu,
 .btn__close__responsive__menu {
     display: none;
@@ -280,11 +359,19 @@ a.link__hover:hover {
     filter: invert(100%);
 }
 
+.navbar__hidden {
+    display: flex;
+    align-items: center;
+}
+
 /*Button dark and light mode*/
 
 .button__themes {
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
+    border: none;
 }
 
 .icon__theme {
@@ -317,7 +404,7 @@ a.link__hover:hover {
 
 .header__layout {
     width: 100%;
-    padding-top: 3rem;
+    padding: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,16 +474,17 @@ a.link__hover:hover {
 }
 
 /*Button Descargar CV*/
-
-.dark__theme .download__cv {
-    background-color: var(--color-2);
-    box-shadow: 1px 1px 0px var(--color-2),
-        2px 2px 0px var(--color-2),
-        3px 3px 0px var(--color-2),
-        4px 4px 0px var(--color-2),
-        5px 5px 0px var(--color-2),
+.download__cv:hover {
+    border-color: var(--color-1);
+    box-shadow: 1px 1px 0px var(--title-color),
+        2px 2px 0px var(--title-color),
+        3px 3px 0px var(--title-color),
+        4px 4px 0px var(--title-color),
+        5px 5px 0px var(--title-color),
         6px 6px 0px var(--color-1),
         7px 7px 0px var(--color-1);
+    background-color: var(--title-color);
+    color: var(--shadow-color);
 }
 
 /*Logo*/
@@ -631,10 +719,10 @@ a.download__cv {
         6px 6px 0px var(--shadow-color),
         7px 7px 0px var(--shadow-color);
     color: var(--link-bg-color);
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .article__project:last-child a.project__link {
@@ -771,7 +859,7 @@ a.project__link:hover {
     fill: var(--shadow-color);
 }
 
-.skills__block li:nth-child(2){
+.skills__block li:nth-child(2) {
     stroke: var(--text-color);
 }
 
