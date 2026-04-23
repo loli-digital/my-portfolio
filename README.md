@@ -33,13 +33,13 @@ Actualmente sigo mejorando mis conocimientos en:
 
 Este portfolio y los proyectos incluidos han sido desarrollados en:
 
-HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Bootstrap · WordPress · Git · GitHub
+HTML5 · CSS3 · JavaScript · React · Tailwind CSS · Git · GitHub
 
 ---
 
 # Qué puedes encontrar en este portfolio
 
-- Aplicación desarrollada con **React**
+- Aplicación web desarrollada con **React**
 - Interfaces responsive con **Tailwind CSS**
 - Formularios con validación
 - Componentes reutilizables
