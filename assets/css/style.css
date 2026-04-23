@@ -396,11 +396,21 @@ a.link__hover:hover {
     border-radius: 5px;
 }
 
-.article__habilities>.logo__svg__bootstrap,
 .contact__logo>a>.logo__svg__linkedin,
 .contact__logo>a>.logo__svg__github {
     width: 4rem;
     height: 4rem;
+}
+
+.contact__logo>a>.icon__mail {
+    width: 5rem;
+    height: 5rem;
+    filter: drop-shadow(0px 0px 2px var(--shadow-color));
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact__logo>a>.icon__mail:hover {
+    transform: scale(1.1);
 }
 
 .article__habilities>.logo__svg.logo__without__shadow,
