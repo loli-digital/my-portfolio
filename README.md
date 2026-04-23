@@ -108,3 +108,9 @@ Clonar el repositorio:
 ## Contacto
 
 [LinkedIn](https://www.linkedin.com/in/loli-guerrero/) || [GitHub](https://github.com/loli-digital)
+
+---
+
+### Atribución
+
+Los emojis se han obtenido de la web [www.thiings.co](https://www.thiings.co/things)
