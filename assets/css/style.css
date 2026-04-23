@@ -73,8 +73,8 @@ body.dark__theme {
 }
 
 .dark__theme .link__hover,
-.dark__theme  .project__title,
-.dark__theme  .text__font-family {
+.dark__theme .project__title,
+.dark__theme .text__font-family {
     color: var(--text-color);
 }
 
@@ -99,9 +99,9 @@ body.dark__theme {
     box-shadow: none;
 }
 
-.dark__theme .project__link {
+.dark__theme .project__link,
+.dark__theme .download__cv {
     border-color: var(--color-1);
-    background-color: var(--color-3);
     color: var(--text-color);
     box-shadow: 1px 1px 0px var(--color-3),
         2px 2px 0px var(--color-3),
@@ -112,7 +112,12 @@ body.dark__theme {
         7px 7px 0px var(--color-1);
 }
 
-.dark__theme .project__link:hover {
+.dark__theme .project__link {
+    background-color: var(--color-3);
+}
+
+.dark__theme .project__link:hover,
+.dark__theme .download__cv:hover {
     border: 3px solid var(--color-border);
     box-shadow: 1px 1px 0px var(--color-1),
         2px 2px 0px var(--color-1),
@@ -121,8 +126,8 @@ body.dark__theme {
         5px 5px 0px var(--color-1),
         6px 6px 0px var(--color-border),
         7px 7px 0px var(--color-border);
-    color: var(--link-bg-color);
     background-color: var(--color-1);
+    color: var(--link-bg-color);
 }
 
 .dark__theme .project__title {
@@ -144,7 +149,7 @@ body.dark__theme {
     filter: drop-shadow(0 0 0 transparent);
 }
 
-.dark__theme .about__me a.text__font-family{
+.dark__theme .about__me a.text__font-family {
     color: var(--shadow-color);
 }
 
@@ -200,65 +205,6 @@ a.link__hover,
 .project__title,
 .text__font-family {
     color: var(--shadow-color);
-}
-
-/*Header*/
-
-.header__layout {
-    width: 100%;
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__text {
-    margin-top: 7rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__text h1 {
-    font-size: 6rem;
-    font-family: var(--font-family-title);
-    color: var(--title-color);
-    text-shadow:
-        /*Para crear el borde*/
-        2px 0 0 var(--color-1),
-        -2px 0 0 var(--color-1),
-        0 2px 0 var(--color-1),
-        0 -2px 0 var(--color-1),
-        var(--color-1) 1px 1px, 
-        var(--color-1) 0px 0px, 
-        var(--color-1) 1px 1px, 
-        var(--color-1) 2px 2px, 
-        var(--color-1) 3px 3px, 
-        var(--color-1) 4px 4px, 
-        var(--color-1) 5px 5px, 
-        var(--color-1) 6px 6px, 
-        var(--color-1) 7px 7px, 
-        var(--color-1) 8px 8px;
-}
-
-.header__text p:last-child {
-    margin-top: 3rem;
-}
-
-.text__font-family,
-.project__title,
-.project__link {
-    font-family: var(--font-family-link);
 }
 
 /*Navbar*/
@@ -357,6 +303,82 @@ a.link__hover:hover {
     display: block;
 }
 
+/*Header*/
+
+.header__layout {
+    width: 100%;
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__text {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__text h1 {
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    font-family: var(--font-family-title);
+    color: var(--title-color);
+    text-shadow:
+        /*Para crear el borde*/
+        2px 0 0 var(--color-1),
+        -2px 0 0 var(--color-1),
+        0 2px 0 var(--color-1),
+        0 -2px 0 var(--color-1),
+        var(--color-1) 1px 1px,
+        var(--color-1) 0px 0px,
+        var(--color-1) 1px 1px,
+        var(--color-1) 2px 2px,
+        var(--color-1) 3px 3px,
+        var(--color-1) 4px 4px,
+        var(--color-1) 5px 5px,
+        var(--color-1) 6px 6px,
+        var(--color-1) 7px 7px,
+        var(--color-1) 8px 8px;
+}
+
+.header__text h2 {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-family: var(--font-family-text);
+}
+
+.header__text h2,
+.header__text .text__p {
+    padding: 0 3rem;
+}
+
+.text__font-family,
+.project__title,
+.project__link,
+.download__cv {
+    font-family: var(--font-family-link);
+}
+
+/*Button Descargar CV*/
+
+.dark__theme .download__cv {
+    background-color: var(--color-2);
+}
+
 /*Logo*/
 .logo__svg {
     width: 4rem;
@@ -403,7 +425,8 @@ a.link__hover:focus-visible,
     outline-offset: 4px;
 }
 
-a.project__link:focus-visible {
+a.project__link:focus-visible,
+a.download__cv:focus-visible {
     outline: 3px solid var(--title-color);
     outline-offset: 4px;
 }
@@ -428,14 +451,15 @@ a.project__link:focus-visible {
     color: transparent;
 }
 
-.sr-only:focus, .sr-only:active { 
-    position: static; 
-    width: auto; 
-    height: auto; 
-    margin: 0; 
-    overflow: visible; 
-    clip-path: auto; 
-    white-space: normal; 
+.sr-only:focus,
+.sr-only:active {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip-path: auto;
+    white-space: normal;
 }
 
 /*Main*/
@@ -459,17 +483,17 @@ p {
     font-size: 4rem;
     color: var(--title-color);
     text-shadow:
-      2.5px 0 0 var(--color-1),
-      -2.5px 0 0 var(--color-1),
-      0 2.5px 0 var(--color-1),
-      0 -2.5px 0 var(--color-1),
-      var(--color-1) 1px 1px, 
-      var(--color-1) 0px 0px, 
-      var(--color-1) 1px 1px, 
-      var(--color-1) 2px 2px, 
-      var(--color-1) 3px 3px, 
-      var(--color-1) 4px 4px, 
-      var(--color-1) 5px 5px;
+        2.5px 0 0 var(--color-1),
+        -2.5px 0 0 var(--color-1),
+        0 2.5px 0 var(--color-1),
+        0 -2.5px 0 var(--color-1),
+        var(--color-1) 1px 1px,
+        var(--color-1) 0px 0px,
+        var(--color-1) 1px 1px,
+        var(--color-1) 2px 2px,
+        var(--color-1) 3px 3px,
+        var(--color-1) 4px 4px,
+        var(--color-1) 5px 5px;
 }
 
 .main__projects {
@@ -567,7 +591,8 @@ p {
     align-items: center;
 }
 
-a.project__link {
+a.project__link,
+a.download__cv {
     width: 17rem;
     margin-top: 2rem;
     padding: 1.5rem;
@@ -597,7 +622,7 @@ a.project__link {
     display: flex;
     justify-content: center;
     align-items: center;
-   }
+}
 
 a.project__link:hover {
     border-color: var(--color-1);
@@ -652,7 +677,8 @@ a.project__link:hover {
 
 .main__title,
 .main__contact,
-.project__link {
+.project__link,
+.download__cv {
     text-align: center;
 }
 
