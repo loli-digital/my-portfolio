@@ -322,7 +322,7 @@ a.link__hover:hover {
     align-items: center;
 }
 
-.header__text {
+.hero__section {
     margin-top: 7rem;
     margin-bottom: 4rem;
     display: flex;
@@ -332,7 +332,7 @@ a.link__hover:hover {
     gap: 2rem;
 }
 
-.header__text h1 {
+.hero__section h1 {
     margin-bottom: 3rem;
     font-size: 6rem;
     font-family: var(--font-family-title);
@@ -355,14 +355,14 @@ a.link__hover:hover {
         var(--color-1) 8px 8px;
 }
 
-.header__text h2 {
+.hero__section h2 {
     font-size: 1.6rem;
     color: var(--text-color);
     font-family: var(--font-family-text);
 }
 
-.header__text h2,
-.header__text .text__p {
+.hero__section h2,
+.hero__section .text__p {
     padding: 0 3rem;
 }
 
