@@ -181,14 +181,6 @@ body.dark__theme {
     filter: drop-shadow(0 0 0 transparent);
 }
 
-.dark__theme .about__me a.text__font-family {
-    color: var(--shadow-color);
-}
-
-.dark__theme .about__me a.text__font-family:hover {
-    color: var(--color-1);
-}
-
 .dark__theme .footer__link {
     background-color: var(--color-2);
     color: var(--title-color);
@@ -619,7 +611,7 @@ p {
 .article__project {
     width: 100%;
     margin-bottom: 6rem;
-    padding: 2rem 5rem;
+    padding: 2rem 5rem 3rem 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -646,7 +638,15 @@ p {
 }
 
 .article__description {
-    flex-basis: 45%;
+    flex-basis: 50%;
+}
+
+.article__description p {
+    margin: 0.5rem 0;
+}
+
+.article__description p:last-child {
+    margin-bottom: 0;
 }
 
 .container__img__habilities {
