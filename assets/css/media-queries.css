@@ -109,7 +109,7 @@
     align-items: center;
   }
 
-  .navbar__empty {
+  .navbar__brand {
     display: flex;
     justify-content: flex-start;
     order: 1;
@@ -147,9 +147,10 @@
   }
 
   .navbar.visible {
+    width: 100%;
     opacity: 1;
     visibility: visible;
-    height: 35rem;
+    height: 30rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom: 3px solid var(--shadow-color);
@@ -158,10 +159,6 @@
   .navbar__links {
     flex-direction: column;
     align-items: end;
-  }
-
-  .navbar__hidden {
-    display: none;
   }
 
   .button__themes {
@@ -321,9 +318,28 @@
     width: 80%;
   }
 
-  .navbar__empty,
-  .button__themes {
-    width: 10%;
+  .navbar__right {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+  .brand__logo {
+    margin-left: 5rem;
+    display: flex;
+    font-size: 3rem;
+    font-family: var(--font-family-title);
+    color: var(--title-color);
+    text-shadow: 2px 0 0 var(--color-1),
+      -2px 0 0 var(--color-1),
+      0 2px 0 var(--color-1),
+      0 -2px 0 var(--color-1),
+      var(--color-1) 0px 0px,
+      var(--color-1) 1px 1px,
+      var(--color-1) 2px 2px;
   }
 
   .navbar__links .link__hover,

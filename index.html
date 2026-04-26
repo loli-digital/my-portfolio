@@ -39,7 +39,10 @@
 
             <div class="header__nav">
 
-                <div class="navbar__empty">
+                <div class="navbar__brand">
+
+                    <a href="#" class="brand__logo">LG</a>
+
                     <button class="btn__responsive__menu" aria-label="Abrir menú">
                         <img src="assets/img/bars-solid-full.svg" alt="Abrir menú desplegable"
                             title="Abrir menú desplegable para móvil" class="menu-mobile">
@@ -55,9 +58,6 @@
 
                     <ul class="navbar__links">
                         <li>
-                            <a href="#" class="link__hover">Inicio</a>
-                        </li>
-                        <li>
                             <a href="#projects" class="link__hover">Proyectos</a>
                         </li>
                         <li>
@@ -66,19 +66,24 @@
                         <li>
                             <a href="#contact" class="link__hover">Contacta</a>
                         </li>
-                        <li class="navbar__hidden">
+                    </ul>
+                </nav>
+
+                <div class="navbar__right">
+                    <ul class="navbar__social">
+                        <li>
                             <a href="CV_Loli_Guerrero_Frontend_Developer_Junior.pdf"
                                 download="CV_Loli_Guerrero_Frontend_Developer_Junior.pdf" class="download__cv--navbar">
                                 Descargar CV
                             </a>
                         </li>
-                        <li class="navbar__hidden">
+                        <li>
                             <a href="mailto:loli.guerrero.dev@gmail.com">
                                 <img src="assets/img/mail.svg" alt="Email icon" title="Correo electrónico"
                                     class="logo__navbar logo__navbar--email">
                             </a>
                         </li>
-                        <li class="navbar__hidden">
+                        <li>
                             <a href="https://www.linkedin.com/in/loli-guerrero/" target="_blank"
                                 rel="noopener noreferrer">
                                 <img src="assets/img/linkedin.svg" alt="Logo LinkedIn" title="LinkedIn"
@@ -86,7 +91,7 @@
                                 <span class="sr-only">(se abre en una nueva pestaña)</span>
                             </a>
                         </li>
-                        <li class="navbar__hidden">
+                        <li>
                             <a href="https://github.com/loli-digital" target="_blank" rel="noopener noreferrer">
                                 <img src="assets/img/github.svg" alt="Logo GitHub" title="GitHub"
                                     class="logo__navbar">
@@ -94,16 +99,18 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
 
-                <button id="theme-toggle" class="button__themes">
-                    <span class="icon__theme">
-                        <img src="assets/img/moon.png" alt="Emoji de luna con estrella">
-                    </span>
-                    <span class="icon__theme">
-                        <img src="assets/img/sun.png" alt="Emoji de sol">
-                    </span>
-                </button>
+                    <button id="theme-toggle" class="button__themes">
+                        <span class="icon__theme">
+                            <img src="assets/img/moon.png" alt="Emoji de luna con estrella">
+                        </span>
+                        <span class="icon__theme">
+                            <img src="assets/img/sun.png" alt="Emoji de sol">
+                        </span>
+                    </button>
+                </div>
+
+
             </div>
         </header>
 

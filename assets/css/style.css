@@ -71,13 +71,13 @@ body.dark__theme {
     background-image: linear-gradient(var(--color-2), var(--color-3));
 }
 
-.dark__theme .navbar__links>li>a.download__cv--navbar {
+.dark__theme .download__cv--navbar {
     background-color: var(--color-2);
     border: 3px solid var(--color-1);
     color: var(--text-color);
 }
 
-.dark__theme .navbar__links>li>a.download__cv--navbar:hover {
+.dark__theme .download__cv--navbar:hover {
     border: 3px solid var(--color-border);
     background-color: var(--color-1);
     color: var(--link-bg-color);
@@ -241,30 +241,41 @@ a.link__hover,
 
 /*Navbar*/
 
-.navbar,
-.navbar__links,
-.button__themes {
-    width: 100%;
+.navbar__links {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar {
-    width: 100%;
+    display: flex;
     justify-content: center;
+    flex: 1;
 }
 
-.navbar__empty {
+.navbar__brand {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 1rem;
+    flex: 1;
 }
 
-.navbar__empty,
-.button__themes {
+.navbar__right {
+    display: none;
+}
+
+.navbar__social {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navbar__links {
     width: auto;
+}
+
+.brand__logo {
+    display: none;
 }
 
 .navbar__links {
@@ -280,7 +291,7 @@ nav ul li a {
     font-size: 2rem;
 }
 
-.navbar__links>li>a.download__cv--navbar {
+.download__cv--navbar {
     margin-top: 0;
     padding: 1rem;
     display: inline-block;
@@ -295,7 +306,7 @@ nav ul li a {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.navbar__links>li>a.download__cv--navbar:hover {
+.download__cv--navbar:hover {
     border: 3px solid var(--color-1);
     background-color: var(--title-color);
     color: var(--shadow-color);
@@ -345,7 +356,7 @@ a.link__hover:hover {
 
 .btn__responsive__menu {
     display: block;
-    margin-left: 1rem;
+    margin-right: 2rem;
 }
 
 .btn__responsive__menu,
@@ -357,11 +368,6 @@ a.link__hover:hover {
 .menu-mobile-cancelar {
     width: 3rem;
     filter: invert(100%);
-}
-
-.navbar__hidden {
-    display: flex;
-    align-items: center;
 }
 
 /*Button dark and light mode*/
@@ -414,8 +420,7 @@ a.link__hover:hover {
 .header__nav {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
