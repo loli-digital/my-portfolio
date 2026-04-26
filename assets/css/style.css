@@ -474,7 +474,8 @@ a.link__hover:hover {
 .text__font-family,
 .project__title,
 .project__link,
-.download__cv {
+.download__cv,
+.download__cv--navbar {
     font-family: var(--font-family-link);
 }
 
