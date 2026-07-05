@@ -8,10 +8,6 @@ El objetivo del portfolio es presentar mis habilidades en desarrollo frontend, d
 
 [Demo del portfolio](https://loli-digital.github.io/my-portfolio/)
 
-## Vista previa
-
-![Portfolio Frontend Developer - Loli Guerrero](portfolio-frontend-loli-guerrero.png)
-
 ---
 
 # Sobre mí
