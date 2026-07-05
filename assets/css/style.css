@@ -121,12 +121,14 @@ body.dark__theme {
 }
 
 .dark__theme .project__link,
+.dark__theme .project__link--center,
 .dark__theme .download__cv {
     border-color: var(--color-1);
     color: var(--text-color);
 }
 
-.dark__theme .project__link {
+.dark__theme .project__link,
+.dark__theme .project__link--center {
     background-color: var(--color-3);
     box-shadow: 1px 1px 0px var(--color-3),
         2px 2px 0px var(--color-3),
@@ -149,6 +151,7 @@ body.dark__theme {
 }
 
 .dark__theme .project__link:hover,
+.dark__theme .project__link--center:hover,
 .dark__theme .download__cv:hover {
     border: 3px solid var(--color-border);
     box-shadow: 1px 1px 0px var(--color-1),
@@ -466,6 +469,7 @@ a.link__hover:hover {
 .text__font-family,
 .project__title,
 .project__link,
+.project__link--center,
 .download__cv,
 .download__cv--navbar {
     font-family: var(--font-family-link);
@@ -542,6 +546,7 @@ a.link__hover:focus-visible,
 }
 
 a.project__link:focus-visible,
+a.project__link--center:focus-visible,
 a.download__cv:focus-visible {
     outline: 3px solid var(--title-color);
     outline-offset: 4px;
@@ -699,16 +704,33 @@ p {
     text-align: center;
 }
 
-.layout__links {
+.layout__links,
+.layout__links--center  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+}
+
+.layout__links{
+    justify-content: space-between;
+}
+
+.layout__links--center {
+    justify-content: center;
+}
+
+.project__link--center{
+    width: 20rem;
 }
 
 a.project__link,
 a.download__cv {
     width: 17rem;
+}
+
+a.project__link,
+.project__link--center,
+a.download__cv {
     margin-top: 2rem;
     padding: 1.5rem;
     display: inline-block;
@@ -739,7 +761,8 @@ a.download__cv {
     align-items: center;
 }
 
-a.project__link:hover {
+a.project__link:hover,
+a.project__link--center:hover {
     border-color: var(--color-1);
     background-color: var(--color-3);
     color: var(--shadow-color);
@@ -875,6 +898,7 @@ a.project__link:hover {
 .main__contact,
 .main__about__me,
 .project__link,
+.project__link--center,
 .download__cv {
     text-align: center;
 }
