@@ -1,4 +1,18 @@
-export const projects = [
+export type Project = {
+  id: number;
+  imgAVIF: string;
+  imgWEBP: string;
+  img: string;
+  alt: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  tecnologies: string[];
+  demo: string;
+  github: string;
+};
+
+export const projects: Project[] = [
   {
     id: 1,
     imgAVIF: new URL(
