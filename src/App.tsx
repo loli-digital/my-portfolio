@@ -2,6 +2,7 @@ import {
   Footer,
   Navbar,
   HeroSection,
+  ProjectSection,
   SkillsSection,
   AboutMeSection,
   ContactSection,
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <main>
         <HeroSection />
+        <ProjectSection />
         <SkillsSection />
         <AboutMeSection />
         <ContactSection />
