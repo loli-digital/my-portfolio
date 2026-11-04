@@ -14,10 +14,6 @@
     margin-top: $space-md;
     font-size: $font-size-base;
 
-    @media (min-width: $bp-desktop) {
-      font-size: $font-size-lg;
-    }
-
     &--role {
       font-family: "JetBrains Mono";
       font-weight: 600;
