@@ -30,19 +30,19 @@ export function Navbar() {
       <nav className="navbar">
         <ul className="navbar__menu">
           <li className="navbar__item">
-            <a href="#">Inicio</a>
+            <a href="#" className="item__link">Inicio</a>
           </li>
           <li className="navbar__item">
-            <a href="#projects">Proyectos</a>
+            <a href="#projects" className="item__link">Proyectos</a>
           </li>
           <li className="navbar__item">
-            <a href="#habilities">Habilidades</a>
+            <a href="#habilities" className="item__link">Habilidades</a>
           </li>
           <li className="navbar__item">
-            <a href="#about-me">Sobre mí</a>
+            <a href="#about-me" className="item__link">Sobre mí</a>
           </li>
           <li className="navbar__item">
-            <a href="#contact">Contacto</a>
+            <a href="#contact" className="item__link">Contacto</a>
           </li>
         </ul>
       </nav>
