@@ -28,7 +28,11 @@ main {
 }
 
 section {
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 5rem;
+
+  @media (min-width: $bp-laptop) {
+    scroll-margin-top: 10rem;
+  }
 }
 
 h1,
