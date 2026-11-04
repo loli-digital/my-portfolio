@@ -3,6 +3,7 @@ export { Navbar } from "./Navbar/Navbar";
 export { Footer } from "./Footer/Footer";
 export { HeroSection } from "./HeroSection/HeroSection";
 export { ProjectCard } from "./ProjectCard/ProjectCard";
+export { ProjectSection } from "./ProjectSection/ProjectSection";
 export { SkillsSection } from "./SkillsSection/SkillsSection";
 export { SkillCard } from "./SkillCard/SkillCard";
 export { AboutMeSection } from "./AboutMeSection/AboutMeSection";
