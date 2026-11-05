@@ -19,14 +19,18 @@
     gap: $space-md;
   }
 
-  &__anchor:first-of-type {
-    display: flex;
-  }
-
-  &__anchor:not(:first-of-type) {
+  &__anchor {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &--1 &__anchor {
+    display: none;
+
+    @media (min-width: $bp-mobile-xl) {
+      display: inline-flex;
+    }
   }
 
   &__icon {
