@@ -12,25 +12,20 @@
   border-radius: $radius-md;
 
   &__details {
+    min-width: 0;
+    flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: $space-md;
   }
 
   &__anchor {
+    flex-shrink: 0;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &--1 &__anchor {
-    display: none;
-
-    @media (min-width: $bp-mobile-xl) {
-      display: inline-flex;
-    }
   }
 
   &__icon {
@@ -57,6 +52,7 @@
   }
 
   &__info {
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -73,6 +69,7 @@
   }
 
   &__address {
+    overflow-wrap: anywhere;
     font-size: $font-size-xs;
     color: $color-text-heading;
 
