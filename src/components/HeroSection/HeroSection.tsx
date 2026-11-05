@@ -25,14 +25,14 @@ export function HeroSection() {
         <picture className="hero__image--bg">
           <img
             loading="lazy"
-            src="/svg-blob-cyan.svg"
+            src={`${import.meta.env.BASE_URL}svg-blob-cyan.svg`}
             alt="Blob de color cyan"
           />
         </picture>
         <picture className="hero__image">
           <img
             loading="lazy"
-            src="/loli-guerrero-avatar.png"
+            src={`${import.meta.env.BASE_URL}loli-guerrero-avatar.png`}
             alt="Avatar de mujer con gafas y jersey negro"
           />
         </picture>
