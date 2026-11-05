@@ -16,7 +16,17 @@ export function ProjectCard() {
               <img loading="lazy" src={project.img} alt={project.alt} />
             </picture>
             <div className="project-card__text-wrapper">
-              <h4 className="project-card__subtitle">{project.subtitle}</h4>
+              <p className="project-card__subtitle">
+                {project.subtitle}
+                <span>
+                  <span className="project-card__subtitle--number">
+                    {project.id}
+                  </span>
+                  <span className="project-card__subtitle--total-projects">
+                    {projects.length}
+                  </span>
+                </span>
+              </p>
               <h3 className="project-card__title">{project.title}</h3>
               <p className="project-card__description">{project.description}</p>
               <div className="project-card__tech-wrapper">
@@ -35,7 +45,9 @@ export function ProjectCard() {
                 >
                   <IconDemo />
                   Ver demo
-                  <span className="sr-only">(se abre en una nueva pestaña)</span>
+                  <span className="sr-only">
+                    (se abre en una nueva pestaña)
+                  </span>
                 </a>
                 <a
                   href={project.github}
@@ -45,7 +57,9 @@ export function ProjectCard() {
                 >
                   <IconCode />
                   Código
-                  <span className="sr-only">(se abre en una nueva pestaña)</span>
+                  <span className="sr-only">
+                    (se abre en una nueva pestaña)
+                  </span>
                 </a>
               </div>
             </div>
