@@ -34,16 +34,24 @@
     }
 
     &:hover {
+      transform: translateY(-0.25rem);
       background-color: $color-surface-card;
+
+      .project-card__picture img {
+        transform: scale(1.05);
+      }
     }
   }
 
   &__picture {
     width: 100%;
+    border-radius: $radius-s;
+    overflow: hidden;
 
     img {
       width: 100%;
       border-radius: $radius-s;
+      transition: transform .2s ease-in-out;
     }
   }
 
@@ -66,7 +74,8 @@
     color: $color-text-subtle;
     text-transform: uppercase;
 
-    &--number, &--total-projects {
+    &--number,
+    &--total-projects {
       color: $color-text-muted;
 
       &::before {
@@ -74,7 +83,7 @@
       }
     }
 
-    &--number::after{
+    &--number::after {
       content: " / ";
     }
   }
