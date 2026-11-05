@@ -1,3 +1,9 @@
+import { type SvgIconComponent } from "@mui/icons-material";
+import {
+  OpenInNewIcon,
+  GitHubIcon,
+} from "@/icons";
+
 export type Project = {
   id: number;
   imgAVIF: string;
@@ -7,8 +13,10 @@ export type Project = {
   title: string;
   subtitle: string;
   description: string;
-  tecnologies: string[];
+  tech: string[];
+  iconDemo: SvgIconComponent;
   demo: string;
+  iconCode: SvgIconComponent;
   github: string;
 };
 
@@ -31,9 +39,11 @@ export const projects: Project[] = [
     title: "Adopta un Junior",
     subtitle: "Plataforma colaborativa",
     description: "Plataforma colaborativa orientada a mejorar la experiencia de los nueva/os desarrolladora/es dentro de la comunidad Adopta un Junior. Diseñada con enfoque mobile-first, creación de componentes reutilizables en React, arquitectura modular y maquetación con Tailwind CSS",
-    tecnologies: ["React", "TypeScript", "Tailwind"],
+    tech: ["React", "TypeScript", "Tailwind", "CSS"],
+    iconDemo: OpenInNewIcon,
     demo: "https://adoptaunjunior.es/",
-    github: "",
+    iconCode: GitHubIcon,
+    github: "https://github.com/AdoptaUnJuniorPlatform",
   },
   {
     id: 2,
@@ -53,9 +63,11 @@ export const projects: Project[] = [
     title: "Clínica dental Navarro",
     subtitle: "Healthcare Booking",
     description:
-      "Sistema interactivo de gestión y reserva de citas odontológicas. Incorpora dashboard privado, calendario interactivo con horarios disponibles, selector de especialistas, validación reactiva de formularios y confirmación instantánea",
-    tecnologies: ["React", "JavaScript", "Tailwind", "Swiper", "Datepicker"],
+      "Aplicación web para la gestión y reserva de citas odontológicas. Desarrollada con React y Firebase, incorpora dashboard privado, calendario interactivo, selección de especialistas, validación de formularios y diseño responsive orientado a la experiencia de usuario/a",
+    tech: ["React", "JavaScript", "Tailwind", "Swiper", "Datepicker"],
+    iconDemo: OpenInNewIcon, 
     demo: "https://calendario-dentista-react.pages.dev/",
+    iconCode: GitHubIcon,
     github: "https://github.com/loli-digital/calendario-dentista-react",
   },
   {
@@ -76,22 +88,24 @@ export const projects: Project[] = [
     title: "Assassin's Creed Project",
     subtitle: "Gaming Web",
     description: "Recreación visual de la página oficial de Assassin's Creed, centrada en la maquetación fiel a su estética. Incluye diseño responsive,  adaptación de secciones promocionales con HTML, CSS y JavaScript mínimo para lograr una experiencia estática pulida y coherente con la identidad de la saga",
-    tecnologies: ["HTML", "Tailwind", "JavaScript"],
+    tech: ["HTML", "JavaScript", "Tailwind", "CSS"],
+    iconDemo: OpenInNewIcon,
     demo: "https://loli-digital.github.io/assassins-creed-project/",
+    iconCode: GitHubIcon,
     github: "https://github.com/loli-digital/assassins-creed-project",
   },
   {
     id: 4,
     imgAVIF: new URL(
-      "@/assets/images/mini-projectos.avif",
+      "@/assets/images/mini-proyectos.avif",
       import.meta.url,
     ).href,
     imgWEBP: new URL(
-      "@/assets/images/mini-projectos.webp",
+      "@/assets/images/mini-proyectos.webp",
       import.meta.url,
     ).href,
     img: new URL(
-      "@/assets/images/mini-projectos.jpg",
+      "@/assets/images/mini-proyectos.png",
       import.meta.url,
     ).href,
     alt: "Sección de mini proyectos con tres tarjetas en formato horizontal, cada una mostrando un monitor con la interfaz del proyecto y su descripción sobre un fondo degradado en tonos morados",
@@ -99,8 +113,10 @@ export const projects: Project[] = [
     subtitle: "Frontend Projects",
     description:
       "Colección de proyectos y micro-herramientas: widget del tiempo en tiempo real consumiendo API REST, conversor de temperatura, widget para mostrar repositorios de GitHub aleatorios consumiendo API REST y recreación de los cromos de las ranas de chocolate que aparecen en la saga de Harry Potter",
-    tecnologies: ["HTML", "JavaScript", "CSS", "API"],
+    tech: ["HTML", "JavaScript", "CSS", "API"],
+    iconDemo: OpenInNewIcon,
     demo: "https://loli-digital.github.io/mini-proyectos/",
+    iconCode: GitHubIcon,
     github: "https://github.com/loli-digital/mini-proyectos",
   },
 ];
