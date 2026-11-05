@@ -19,7 +19,11 @@
     gap: $space-md;
   }
 
-  &__anchor{
+  &__anchor:first-of-type {
+    display: flex;
+  }
+
+  &__anchor:not(:first-of-type) {
     display: inline-flex;
     justify-content: center;
     align-items: center;
