@@ -35,19 +35,26 @@
   &__title {
     font-size: 4rem;
     color: $color-text-heading;
+
+    &--decoration {
+      background: linear-gradient(
+        to right,
+        $color-btn-primary,
+        $color-icon-tertiary-content
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
   }
 
   &__role {
     font-family: "JetBrains Mono";
-    font-size: $font-size-base;
+    font-size: $font-size-lg;
     font-weight: 600;
     color: $color-text-subtle;
     text-shadow:
         0 0 5px $color-icon-primary-content;
-
-    @media (min-width: $bp-mobile-xl) {
-      font-size: $font-size-lg;
-    }
   }
 
   &__description {
