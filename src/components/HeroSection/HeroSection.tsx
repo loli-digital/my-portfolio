@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="hero">
       <div className="hero__text">
         <h1 className="hero__title">Loli G.F.</h1>
-        <p className="hero__role">Desarrolladora web Front-end</p>
+        <p className="hero__role">Frontend Developer</p>
         <p className="hero__description">
           Construyo interfaces web modernas, accesibles y de alto rendimiento
           utilizando <span className="hero__description--tech">React</span>,{" "}
