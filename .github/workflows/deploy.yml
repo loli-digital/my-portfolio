@@ -25,9 +25,9 @@ jobs:
         with:
           node-version: lts/*
 
-      - run: pnpm install
+      - run: npm install
 
-      - run: pnpm run build
+      - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
