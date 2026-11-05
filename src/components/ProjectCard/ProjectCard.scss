@@ -25,11 +25,11 @@
     border-radius: $radius-s;
     transition: all 0.3s ease-in-out;
 
-    @media(min-width: $bp-mobile-xl){
+    @media (min-width: $bp-mobile-xl) {
       padding: $space-lg;
     }
 
-    @media(min-width: $bp-laptop){
+    @media (min-width: $bp-laptop) {
       height: 750px;
     }
 
@@ -56,11 +56,27 @@
   }
 
   &__subtitle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-family: "JetBrains Mono";
     font-size: $font-size-xs;
     font-weight: 500;
     color: $color-text-subtle;
     text-transform: uppercase;
+
+    &--number, &--total-projects {
+      color: $color-text-muted;
+
+      &::before {
+        content: "0";
+      }
+    }
+
+    &--number::after{
+      content: " / ";
+    }
   }
 
   &__title {
@@ -101,11 +117,11 @@
     font-size: $font-size-xs;
     transition: all 0.3s ease-in-out;
 
-    @media(min-width: $bp-mobile-xl){
+    @media (min-width: $bp-mobile-xl) {
       font-size: $font-size-base;
     }
 
-    @media(min-width: $bp-laptop){
+    @media (min-width: $bp-laptop) {
       gap: $space-xl;
     }
 
@@ -128,10 +144,6 @@
       color: $color-text-heading;
       background-color: $color-icon-tertiary;
       border: 1px solid transparent;
-
-      &:first-of-type {
-        display: none;
-      }
 
       &:hover {
         border-color: $color-icon-tertiary-content;
