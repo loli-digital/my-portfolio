@@ -1,0 +1,142 @@
+@use "../../styles/variables" as *;
+
+.project-card {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: $space-lg;
+
+  @media (min-width: $bp-laptop) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: $space-md;
+    background-color: $color-surface;
+    border-radius: $radius-s;
+    transition: all 0.3s ease-in-out;
+
+    @media(min-width: $bp-mobile-xl){
+      padding: $space-lg;
+    }
+
+    @media(min-width: $bp-laptop){
+      height: 750px;
+    }
+
+    &:hover {
+      background-color: $color-surface-card;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: $radius-s;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: $space-md;
+  }
+
+  &__subtitle {
+    font-family: "JetBrains Mono";
+    font-size: $font-size-xs;
+    font-weight: 500;
+    color: $color-text-subtle;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-text-heading;
+  }
+
+  &__description {
+    font-size: $font-size-sm;
+    color: $color-text;
+  }
+
+  &__tech-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+    gap: $space-md;
+  }
+
+  &__tech {
+    padding: $space-sm;
+    background-color: $color-border;
+    font-family: "JetBrains Mono";
+    font-size: $font-size-sm;
+    color: $color-text-heading;
+    border-radius: $radius-s;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: $space-md;
+    border-radius: $radius-s;
+    font-size: $font-size-xs;
+    transition: all 0.3s ease-in-out;
+
+    @media(min-width: $bp-mobile-xl){
+      font-size: $font-size-base;
+    }
+
+    @media(min-width: $bp-laptop){
+      gap: $space-xl;
+    }
+
+    &--demo {
+      padding: $space-sm $space-md;
+      gap: $space-xs;
+      color: $color-text-heading;
+      background-color: $color-icon-primary;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-color: $color-icon-primary-content;
+        box-shadow: 0 0 5px $color-icon-primary-content;
+      }
+    }
+
+    &--code {
+      padding: $space-sm $space-md;
+      gap: $space-xs;
+      color: $color-text-heading;
+      background-color: $color-icon-tertiary;
+      border: 1px solid transparent;
+
+      &:first-of-type {
+        display: none;
+      }
+
+      &:hover {
+        border-color: $color-icon-tertiary-content;
+        box-shadow: 0 0 5px $color-icon-tertiary-content;
+      }
+    }
+  }
+}
