@@ -23,7 +23,7 @@ export const contactInfo: Contact[] = [
     icon: EmailOutlinedIcon,
     platform: "Email",
     address: "loli.guerrero.dev@gmail.com",
-    link: "loli.guerrero.dev@gmail.com",
+    link: "mailto:loli.guerrero.dev@gmail.com",
     titleLink: "Enviar email",
     iconLink: SendIcon,
   },
