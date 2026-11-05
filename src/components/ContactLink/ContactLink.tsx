@@ -28,7 +28,7 @@ export const ContactLink = ({
     <a
       href={link}
       target={isEmailLink ? undefined : "_blank"}
-      className="contact-link"
+      className={`contact-link contact-link--${id}`}
       rel={isEmailLink ? undefined : "noopener noreferrer"}
     >
       <div className="contact-link__details">
