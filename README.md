@@ -1,78 +1,106 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personal desarrollado con React + TypeScript + Sass para presentar mi perfil profesional, proyectos destacados, habilidades técnicas y contacto.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Este proyecto es una landing page moderna y responsive que sirve como carta de presentación para un desarrollador frontend junior. 
 
-## React Compiler
+Incluye:
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Hero con presentación personal
+- Sección de proyectos con enlaces a demos y repositorios
+- Área de tecnologías, herramientas y soft skills
+- Sección sobre mí
+- Contacto con LinkedIn, GitHub y email
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Stack tecnológico
 
-## Expanding the ESLint configuration
+- React 19
+- TypeScript
+- Vite
+- Sass
+- Material UI Icons
+- ESLint
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Capturas y estructura
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+my-portfolio/
+├── public/
+│   ├── favicon.ico
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   └── cv/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── data/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── icons.ts
+│   ├── index.css
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── eslint.config.js
+├── pnpm-lock.yaml
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Requisitos
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js 18+
+- pnpm
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Instalación
 
+```bash
+pnpm install
 ```
+
+## Scripts disponibles
+
+```bash
+pnpm dev
+```
+Inicia el proyecto en modo desarrollo.
+
+```bash
+pnpm build
+```
+Genera la versión de producción.
+
+```bash
+pnpm preview
+```
+Previsualiza la build generada.
+
+```bash
+pnpm lint
+```
+Ejecuta ESLint para comprobar el código.
+
+## Cómo personalizarlo
+
+Puedes adaptar fácilmente la información del portfolio editando los archivos dentro de `src/data/`:
+
+- `projectsData.ts` — proyectos mostrados
+- `skillsData.ts` — tecnologías, herramientas y habilidades
+- `contactData.ts` — redes sociales y contacto
+
+También puedes cambiar textos, estilos y colores en `src/styles/` y en los componentes de `src/components/`.
+
+## Contacto
+
+Si quieres ponerte en contacto conmigo:
+
+- Email: loli.guerrero.dev@gmail.com
+- LinkedIn: https://www.linkedin.com/in/loli-guerrero/
+- GitHub: https://github.com/loli-digital
+
+## Nota
+
+Este proyecto está pensado como portfolio personal y puede reutilizarse como base para otros portafolios profesionales o de estudio.
