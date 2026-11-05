@@ -22,9 +22,15 @@ export const ContactLink = ({
 }: ContactInfoProps) => {
   const Icon = icon;
   const IconLink = iconLink;
-  return (
-    <a href={link} target="_blank" className="contact-link" rel="noopener noreferrer">
+  const isEmailLink = link.startsWith("mailto:");
 
+  return (
+    <a
+      href={link}
+      target={isEmailLink ? undefined : "_blank"}
+      className="contact-link"
+      rel={isEmailLink ? undefined : "noopener noreferrer"}
+    >
       <div className="contact-link__details">
         <span className={`contact-link__icon contact-link__icon--${id}`}>
           <Icon />
@@ -37,7 +43,9 @@ export const ContactLink = ({
       <span className="contact-link__anchor" title={titleLink}>
         <IconLink />
       </span>
-      <span className="sr-only">(se abre en una nueva pestaña)</span>
+      {!isEmailLink && (
+        <span className="sr-only">(se abre en una nueva pestaña)</span>
+      )}
     </a>
   );
 };
