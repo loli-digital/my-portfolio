@@ -1,0 +1,22 @@
+@use "../../styles/variables" as *;
+
+.projects {
+  width: 100%;
+  padding: $space-md;
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  text-align: start;
+
+  @media(min-width: $bp-tablet){
+      &__title, &__description{
+        margin: 0 $space-xl;
+      }
+  }
+
+  @media(min-width: $bp-laptop){
+      &__title, &__description{
+        margin: 0;
+      }
+  }
+}
