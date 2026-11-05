@@ -5,7 +5,7 @@ export function Button() {
   return (
     <div className="button__cv-wrapper">
       <a
-        href="/cv/CV_Loli_Guerrero_Frontend_Developer_Junior.pdf"
+        href={`${import.meta.env.BASE_URL}cv/CV_Loli_Guerrero_Frontend_Developer_Junior.pdf`}
         download
         className="button__cv button__cv--mobile"
       >
