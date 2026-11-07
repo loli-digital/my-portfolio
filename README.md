@@ -2,7 +2,8 @@
 
 ⚠️ Este repositorio es de código abierto y puede utilizarse como base para crear un portfolio propio. Sin embargo, toda la información personal incluida (fotografía, currículum, biografía, datos de contacto y perfiles profesionales) debe ser sustituida por la del nuevo autor antes de su publicación.
 
-Portfolio personal desarrollado con React + TypeScript + Sass para presentar mi perfil profesional, proyectos destacados, habilidades técnicas y contacto.
+Portfolio personal desarrollado con ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB) + ![TypeScript](https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF) +
+![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white) para presentar mi perfil profesional, proyectos destacados, habilidades técnicas y contacto.
 
 ## Descripción
 
