@@ -89,6 +89,10 @@
         color: $color-text-subtle;
       }
     }
+
+    .navbar__space{
+      padding: $space-sm;
+    }
   }
 
   /*Botón hamburguesa*/
@@ -141,7 +145,6 @@
   }
 
   &__item {
-    padding: $space-md 0;
     cursor: pointer;
     
     .item__link {
