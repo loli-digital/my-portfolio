@@ -124,7 +124,7 @@
     gap: $space-md;
     border-radius: $radius-s;
     font-size: $font-size-xs;
-    transition: all 0.3s ease-in-out;
+    transition: all .25s ease-in-out;
 
     @media (min-width: $bp-mobile-xl) {
       font-size: $font-size-base;
@@ -139,11 +139,11 @@
       gap: $space-xs;
       color: $color-text-heading;
       background-color: $color-icon-primary;
-      border: 1px solid transparent;
+      border: 1px solid $color-icon-primary-content;
+      box-shadow: 0 0 5px $color-icon-primary-content;
 
-      &:hover {
-        border-color: $color-icon-primary-content;
-        box-shadow: 0 0 5px $color-icon-primary-content;
+      &:hover{
+        box-shadow: 0 0 10px $color-icon-primary-content;
       }
     }
 
@@ -152,11 +152,11 @@
       gap: $space-xs;
       color: $color-text-heading;
       background-color: $color-icon-tertiary;
-      border: 1px solid transparent;
+      border: 1px solid $color-icon-tertiary-content;
+      box-shadow: 0 0 5px $color-icon-tertiary-content;
 
-      &:hover {
-        border-color: $color-icon-tertiary-content;
-        box-shadow: 0 0 5px $color-icon-tertiary-content;
+      &:hover{
+        box-shadow: 0 0 10px $color-icon-tertiary-content;
       }
     }
   }
