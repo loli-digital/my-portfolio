@@ -90,3 +90,17 @@ li {
   background-color: $color-accent;
   color: $color-bg;
 }
+
+button,
+.navbar__item a,
+a.button__cv,
+a.contact-link,
+a.project-card__button {
+  min-inline-size: 44px;
+  min-block-size: 44px;
+}
+
+.navbar__item a {
+  display: inline-flex;
+  align-items: center;
+}
