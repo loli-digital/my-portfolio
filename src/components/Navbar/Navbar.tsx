@@ -90,6 +90,7 @@ export function Navbar() {
           </ul>
           {/* Botón para descargar CV */}
           <Button />
+          <div className="navbar__space"></div>
         </div>
       )}
     </header>
