@@ -93,6 +93,18 @@ Puedes adaptar fácilmente la información del portfolio editando los archivos d
 
 También puedes cambiar textos, estilos y colores en `src/styles/` y en los componentes de `src/components/`.
 
+## Uso del proyecto
+
+Este repositorio puede utilizarse libremente como base para crear un portfolio propio, realizar prácticas o fines educativos.
+
+Sin embargo, no está permitido reutilizar mis datos personales, imagen, nombre, currículum, proyectos, textos biográficos, enlaces de contacto o cualquier contenido que me identifique como autora del portfolio. Si utilizas este proyecto, deberás sustituir toda la información personal por la tuya propia antes de publicarlo.
+
+La reutilización del código está permitida, pero la identidad y contenido personal mostrados en este portfolio pertenecen exclusivamente a su autora.
+
+## Créditos
+
+Si utilizas este proyecto como base para crear tu propio portfolio, se agradece mencionar este repositorio como fuente de inspiración o punto de partida, aunque no es obligatorio salvo que la licencia del proyecto indique lo contrario.
+
 ## Contacto
 
 Si quieres ponerte en contacto conmigo:
