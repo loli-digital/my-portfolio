@@ -77,12 +77,19 @@
     }
 
     .navbar__item {
-      padding: $space-md;
       font-size: $font-size-lg;
       color: $color-text;
       border-radius: $radius-s;
+      text-align: start;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+
+      a {
+        min-height: 44px;
+        padding: $space-md;
+        display: flex;
+        align-items: center;
+      }
 
       &:hover {
         background-color: $color-surface-card;
