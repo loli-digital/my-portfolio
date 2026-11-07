@@ -64,34 +64,33 @@ export function Navbar() {
       </button>
 
       {isMenuOpen && (
-        <div
+        <nav
           id="mobile-menu"
           className="header__mobile-menu"
-          role="menu"
-          aria-labelledby="header__toggle"
+          aria-label="Navegación móvil"
         >
           {/* Mobile menu */}
           <ul className="navbar__menu">
-            <li className="navbar__item" role="menuitem" onClick={closeMenu}>
-              <a href="#">Inicio</a>
+            <li className="navbar__item">
+              <a href="#" onClick={closeMenu}>Inicio</a>
             </li>
-            <li className="navbar__item" role="menuitem" onClick={closeMenu}>
-              <a href="#projects">Proyectos</a>
+            <li className="navbar__item">
+              <a href="#projects" onClick={closeMenu}>Proyectos</a>
             </li>
-            <li className="navbar__item" role="menuitem" onClick={closeMenu}>
-              <a href="#habilities">Habilidades</a>
+            <li className="navbar__item">
+              <a href="#habilities" onClick={closeMenu}>Habilidades</a>
             </li>
-            <li className="navbar__item" role="menuitem" onClick={closeMenu}>
-              <a href="#about-me">Sobre mí</a>
+            <li className="navbar__item">
+              <a href="#about-me" onClick={closeMenu}>Sobre mí</a>
             </li>
-            <li className="navbar__item" role="menuitem" onClick={closeMenu}>
-              <a href="#contact">Contacto</a>
+            <li className="navbar__item">
+              <a href="#contact" onClick={closeMenu}>Contacto</a>
             </li>
           </ul>
           {/* Botón para descargar CV */}
           <Button />
           <div className="navbar__space"></div>
-        </div>
+        </nav>
       )}
     </header>
   );
