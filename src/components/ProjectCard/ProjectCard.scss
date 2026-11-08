@@ -51,7 +51,7 @@
     img {
       width: 100%;
       border-radius: $radius-s;
-      transition: transform .2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
   }
 
@@ -124,7 +124,7 @@
     gap: $space-md;
     border-radius: $radius-s;
     font-size: $font-size-xs;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 
     @media (min-width: $bp-mobile-xl) {
       font-size: $font-size-base;
@@ -142,8 +142,13 @@
       border: 1px solid $color-icon-primary-content;
       box-shadow: 0 0 5px $color-icon-primary-content;
 
-      &:hover{
+      &:hover {
         box-shadow: 0 0 10px $color-icon-primary-content;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-icon-primary-content;
+        outline-offset: $space-sm;
       }
     }
 
@@ -155,8 +160,13 @@
       border: 1px solid $color-icon-tertiary-content;
       box-shadow: 0 0 5px $color-icon-tertiary-content;
 
-      &:hover{
+      &:hover {
         box-shadow: 0 0 10px $color-icon-tertiary-content;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-icon-tertiary-content;
+        outline-offset: $space-sm;
       }
     }
   }
