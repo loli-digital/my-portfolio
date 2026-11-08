@@ -9,18 +9,24 @@
   &::after,
   &::before {
     content: "";
-    inset: -4% -1%;
+    inset: -3.8% -1.2%;
     position: absolute;
     background: $gradient-btn-primary-border;
     border-radius: $radius-s;
     z-index: -1;
     pointer-events: none;
-    animation: spin 5s linear infinite;
+    animation: spinButton 5s linear infinite;
   }
 
   &::before {
     filter: blur(10px);
     opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &:hover::before,
+  &:focus-within::before {
+    opacity: 1;
   }
 }
 
@@ -45,27 +51,26 @@
     filter: contrast(130%);
   }
 
+  &:focus-visible {
+    outline: 2px solid $color-text-subtle;
+    outline-offset: $space-sm;
+  }
+
   &--mobile {
     width: 10rem;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  @media (min-width: $bp-laptop) {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 .button__cv--navbar {
-    display: none;
+  display: none;
 
-    @media(min-width: $bp-laptop){
-        display: inline-flex;
-    }
+  @media (min-width: $bp-laptop) {
+    display: inline-flex;
+  }
 }
 
 // Animation border button
@@ -75,7 +80,7 @@
   initial-value: 0deg;
 }
 
-@keyframes spin {
+@keyframes spinButton {
   0% {
     --angle: 0deg;
   }
