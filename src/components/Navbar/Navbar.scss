@@ -18,6 +18,12 @@
   /*Brand*/
   &__brand {
     font-weight: 700;
+    border-radius: $radius-xs;
+
+    &:focus-visible {
+      outline: 2px solid $color-text-subtle;
+      outline-offset: $space-sm;
+    }
 
     &-initials {
       font-family: "Inter";
@@ -89,6 +95,12 @@
         padding: $space-md;
         display: flex;
         align-items: center;
+        border-radius: $radius-xs;
+
+        &:focus-visible {
+          outline: 2px solid $color-text-subtle;
+          outline-offset: $space-sm;
+        }
       }
 
       &:hover {
@@ -97,7 +109,7 @@
       }
     }
 
-    .navbar__space{
+    .navbar__space {
       padding: $space-sm;
     }
   }
@@ -153,7 +165,7 @@
 
   &__item {
     cursor: pointer;
-    
+
     .item__link {
       padding: $space-md;
       font-size: $font-size-sm;
@@ -165,6 +177,11 @@
         background-color: $color-surface-card;
         color: $color-text-subtle;
         font-weight: 900;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $color-text-subtle;
+        outline-offset: $space-sm;
       }
     }
   }
