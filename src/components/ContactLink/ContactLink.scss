@@ -69,9 +69,13 @@
   }
 
   &__address {
-    overflow-wrap: anywhere;
-    font-size: $font-size-xs;
+    font-size: $font-size-base;
     color: $color-text-heading;
+    word-break: break-word;
+  }
+
+  &--1 &__address {
+    font-size: $font-size-sm;
 
     @media (min-width: $bp-mobile-xl) {
       font-size: $font-size-base;
