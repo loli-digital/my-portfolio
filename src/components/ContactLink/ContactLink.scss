@@ -11,6 +11,10 @@
   background-color: $color-bg;
   border-radius: $radius-md;
 
+  &:focus-visible {
+    outline: 2px solid $color-text-subtle;
+  }
+
   &__details {
     min-width: 0;
     flex: 1;
