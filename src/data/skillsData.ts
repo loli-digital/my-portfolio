@@ -105,7 +105,7 @@ export const tools: Tool[] = [
     id: 3,
     icon: FlashOnIcon,
     title: "Vite",
-    subtitle: "Bundler & Fast Refresh",
+    subtitle: "Bundler & Refresh",
   },
   {
     id: 4,
