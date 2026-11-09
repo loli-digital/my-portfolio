@@ -38,6 +38,8 @@ export function HeroSection() {
             src={`${import.meta.env.BASE_URL}svg-blob-cyan.png`}
             alt=""
             aria-hidden="true"
+            width="428"
+            height="428"
           />
         </picture>
         <picture className="hero__image">
@@ -53,6 +55,8 @@ export function HeroSection() {
             fetchPriority="high"
             src={`${import.meta.env.BASE_URL}loli-guerrero-avatar.png`}
             alt="Loli Guerrero, desarrolladora frontend"
+            width="428"
+            height="428"
           />
         </picture>
       </div>
