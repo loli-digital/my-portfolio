@@ -25,21 +25,34 @@ export function HeroSection() {
       {/* Avatar */}
       <div className="hero__wrapper">
         <picture className="hero__image--bg">
-          <source srcSet={`${import.meta.env.BASE_URL}svg-blob-cyan.avif`} type="image/avif" />
-          <source srcSet={`${import.meta.env.BASE_URL}svg-blob-cyan.webp`} type="image/webp" />
+          <source
+            srcSet={`${import.meta.env.BASE_URL}svg-blob-cyan.avif`}
+            type="image/avif"
+          />
+          <source
+            srcSet={`${import.meta.env.BASE_URL}svg-blob-cyan.webp`}
+            type="image/webp"
+          />
           <img
             fetchPriority="high"
             src={`${import.meta.env.BASE_URL}svg-blob-cyan.png`}
-            alt="Blob de color cyan"
+            alt=""
+            aria-hidden="true"
           />
         </picture>
         <picture className="hero__image">
-          <source srcSet={`${import.meta.env.BASE_URL}loli-guerrero-avatar.avif`} type="image/avif" />
-          <source srcSet={`${import.meta.env.BASE_URL}loli-guerrero-avatar.webp`} type="image/webp" />
+          <source
+            srcSet={`${import.meta.env.BASE_URL}loli-guerrero-avatar.avif`}
+            type="image/avif"
+          />
+          <source
+            srcSet={`${import.meta.env.BASE_URL}loli-guerrero-avatar.webp`}
+            type="image/webp"
+          />
           <img
             fetchPriority="high"
             src={`${import.meta.env.BASE_URL}loli-guerrero-avatar.png`}
-            alt="Avatar de mujer con gafas y jersey negro"
+            alt="Loli Guerrero, desarrolladora frontend"
           />
         </picture>
       </div>
