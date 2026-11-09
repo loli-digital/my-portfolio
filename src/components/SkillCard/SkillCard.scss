@@ -10,7 +10,8 @@
 }
 
 .skill-card {
-  width: 17.5rem;
+  width: 90%;
+  //width: 17.5rem;
   height: 28rem;
   display: flex;
   flex-direction: column;
@@ -80,14 +81,6 @@
       @media (min-width: $bp-mobile-xl) {
         gap: $space-md;
       }
-
-      @media (min-width: $bp-laptop) {
-        gap: $space-sm;
-      }
-
-      @media (min-width: $bp-desktop) {
-        gap: $space-md;
-      }
     }
   }
 
@@ -140,15 +133,21 @@
 
   /*Tool Card*/
   .tool-card {
-    width: 7.5rem;
+    width: 100%;
+    //width: 7.5rem;
     height: 6rem;
     padding: $space-xs;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: $space-xs;
     background-color: $color-surface-card;
     border-radius: $radius-s;
+
+    &--3 {
+      gap: 0;
+    }
 
     @media (min-width: $bp-mobile-xl) {
       width: 10rem;
@@ -165,7 +164,10 @@
     }
 
     &__icon {
-      width: $font-size-lg;
+      width: auto;
+      font-size: $font-size-lg;
+      display: flex;
+
       &--1 {
         color: $color-icon-secondary-content;
       }
