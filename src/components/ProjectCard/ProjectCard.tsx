@@ -13,7 +13,13 @@ export function ProjectCard() {
             <picture className="project-card__picture">
               <source srcSet={project.imgAVIF} type="image/avif" />
               <source srcSet={project.imgWEBP} type="image/webp" />
-              <img loading="lazy" src={project.img} alt={project.alt} />
+              <img
+                loading="lazy"
+                src={project.img}
+                alt={project.alt}
+                width="514"
+                height="385"
+              />
             </picture>
             <div className="project-card__text-wrapper">
               <p className="project-card__subtitle">
