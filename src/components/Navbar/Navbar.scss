@@ -36,7 +36,7 @@
       background-color: $color-icon-secondary;
       color: $color-icon-secondary-content;
       font-size: $font-size-xs;
-      font-family: "JetBrains Mono";
+      font-family: $font-secondary;
       border-radius: $radius-xs;
       border: 1px solid $color-icon-secondary-content;
       text-transform: uppercase;
@@ -136,7 +136,7 @@
   display: none;
   text-align: center;
   color: $color-text;
-  font-family: "JetBrains Mono";
+  font-family: $font-secondary;
 
   @media (min-width: $bp-laptop) {
     display: flex;

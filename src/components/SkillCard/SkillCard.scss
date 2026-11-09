@@ -101,7 +101,7 @@
     &__title {
       margin-left: $space-sm;
       margin-right: $space-xs;
-      font-family: "JetBrains Mono";
+      font-family: $font-secondary;
       font-size: $font-size-lg;
       font-weight: 700;
       text-transform: uppercase;
@@ -212,7 +212,7 @@
     &__subtitle {
       text-align: center;
       color: $color-text-muted;
-      font-family: "JetBrains Mono";
+      font-family: $font-secondary;
       font-size: $font-size-xs;
       font-weight: 500;
     }
@@ -292,7 +292,7 @@
 
   &__final-sentence {
     color: $color-text-muted;
-    font-family: "JetBrains Mono";
+    font-family: $font-secondary;
     font-size: $font-size-xs;
     text-align: center;
 
