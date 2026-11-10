@@ -32,7 +32,7 @@ export const projects: Project[] = [
       import.meta.url,
     ).href,
     img: new URL(
-      "@/assets/images/adopta-un-junior.jpg",
+      "@/assets/images/adopta-un-junior.png",
       import.meta.url,
     ).href,
     alt: "Ilustración de comunidad y colaboración digital",
@@ -56,7 +56,7 @@ export const projects: Project[] = [
       import.meta.url,
     ).href,
     img: new URL(
-      "@/assets/images/clinica-dental-navarro.jpg",
+      "@/assets/images/clinica-dental-navarro.png",
       import.meta.url,
     ).href,
     alt: "Página principal de una clínica dental",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       import.meta.url,
     ).href,
     img: new URL(
-      "@/assets/images/assassins-creed-project.jpg",
+      "@/assets/images/assassins-creed-project.png",
       import.meta.url,
     ).href,
     alt: "Página web de Assassin's Creed Mirage",
