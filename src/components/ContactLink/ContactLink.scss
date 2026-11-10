@@ -73,16 +73,9 @@
   }
 
   &__address {
+    max-width: 100%;
     font-size: $font-size-base;
     color: $color-text-heading;
-    word-break: break-word;
-  }
-
-  &--1 &__address {
-    font-size: $font-size-sm;
-
-    @media (min-width: $bp-mobile-xl) {
-      font-size: $font-size-base;
-    }
+    overflow-wrap: anywhere;
   }
 }
